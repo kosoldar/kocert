@@ -2,7 +2,7 @@ FROM php:8.4-cli
 
 RUN apt-get update && apt-get install -y \
     libpng-dev libjpeg-dev libfreetype6-dev \
-    libzip-dev libxml2-dev gettext \
+    libzip-dev libxml2-dev libicu-dev \
     libpq-dev zip unzip git curl \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) \
