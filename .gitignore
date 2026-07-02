@@ -1,6 +1,9 @@
 # Public frontend — not in use, excluded until development starts
 /app/
 
+# Documentación local — PDFs, normas, ejemplos reales, no versionar
+/info/
+
 # OS
 .DS_Store
 Thumbs.db
