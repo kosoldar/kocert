@@ -1,0 +1,12 @@
+# Public frontend — not in use, excluded until development starts
+/app/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+/.idea
+/.vscode
+/.cursor
+/.zed

@@ -1,0 +1,967 @@
+{
+  "C:\\laragon\\www\\kocert\\app\\src\\app\\app-module.ts": {
+    "mtime": 1781810139.807537,
+    "ast_hash": "11fd516c65f5463e57031da0c5d94e80",
+    "semantic_hash": "11fd516c65f5463e57031da0c5d94e80"
+  },
+  "C:\\laragon\\www\\kocert\\app\\src\\app\\app-routing-module.ts": {
+    "mtime": 1781810139.8065372,
+    "ast_hash": "e4d613fffefb7dc13c466971e8e2e52d",
+    "semantic_hash": "e4d613fffefb7dc13c466971e8e2e52d"
+  },
+  "C:\\laragon\\www\\kocert\\app\\src\\app\\app.spec.ts": {
+    "mtime": 1781810139.807537,
+    "ast_hash": "ae4a1e8a053cd3f60a62c6180b49d8d8",
+    "semantic_hash": "ae4a1e8a053cd3f60a62c6180b49d8d8"
+  },
+  "C:\\laragon\\www\\kocert\\app\\src\\app\\app.ts": {
+    "mtime": 1781810139.808537,
+    "ast_hash": "e2bbfd32917f1a2f071adcb9bf13e0c9",
+    "semantic_hash": "e2bbfd32917f1a2f071adcb9bf13e0c9"
+  },
+  "C:\\laragon\\www\\kocert\\app\\src\\main.ts": {
+    "mtime": 1781810139.8045366,
+    "ast_hash": "dd672ae6e91345c2468a72ee1e4853c9",
+    "semantic_hash": "dd672ae6e91345c2468a72ee1e4853c9"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\app-module.ts": {
+    "mtime": 1781850147.5301933,
+    "ast_hash": "82e735e14b9bd70833a40649ee4c4c77",
+    "semantic_hash": "82e735e14b9bd70833a40649ee4c4c77"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\app-routing-module.ts": {
+    "mtime": 1781829992.702055,
+    "ast_hash": "c70e387af60dcc70f2583286be6080e3",
+    "semantic_hash": "c70e387af60dcc70f2583286be6080e3"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\app.spec.ts": {
+    "mtime": 1781809910.5667567,
+    "ast_hash": "120ea4d64ca5e46f54acff598dc1b3fb",
+    "semantic_hash": "120ea4d64ca5e46f54acff598dc1b3fb"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\app.ts": {
+    "mtime": 1781829386.6895106,
+    "ast_hash": "f12a1117f4b04c339c0cfda52c9a5bdb",
+    "semantic_hash": "f12a1117f4b04c339c0cfda52c9a5bdb"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\auth\\auth.module.ts": {
+    "mtime": 1781829252.5863638,
+    "ast_hash": "f79427c963ecd75546d7e82faaf28389",
+    "semantic_hash": "f79427c963ecd75546d7e82faaf28389"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\auth\\login\\login.component.ts": {
+    "mtime": 1781829687.245765,
+    "ast_hash": "6b064c5bde42b9da5c01e8182df1c9d0",
+    "semantic_hash": "6b064c5bde42b9da5c01e8182df1c9d0"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\certificados\\certificados.module.ts": {
+    "mtime": 1781903612.0463147,
+    "ast_hash": "f6e602a914538a640e2229df57c846ca",
+    "semantic_hash": "f6e602a914538a640e2229df57c846ca"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\certificados\\form\\certificado-form.component.ts": {
+    "mtime": 1782259656.0175989,
+    "ast_hash": "d1187ea31020513fb251b2fbd39ca1a9",
+    "semantic_hash": "d1187ea31020513fb251b2fbd39ca1a9"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\certificados\\list\\certificados-list.component.ts": {
+    "mtime": 1782260006.2073112,
+    "ast_hash": "ceca0eeafd7a2eb0877c7a6764354e11",
+    "semantic_hash": "ceca0eeafd7a2eb0877c7a6764354e11"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\certificados\\models\\certificado.model.ts": {
+    "mtime": 1782259594.6782422,
+    "ast_hash": "62ab90f683830afcba3ff5763dcee3b3",
+    "semantic_hash": "62ab90f683830afcba3ff5763dcee3b3"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\certificados\\services\\certificado.service.ts": {
+    "mtime": 1782259599.187281,
+    "ast_hash": "3793056027a362f488fa1cad570213b1",
+    "semantic_hash": "3793056027a362f488fa1cad570213b1"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\core\\guards\\auth.guard.ts": {
+    "mtime": 1781829229.7424395,
+    "ast_hash": "311b096266fadfde3173a6f2cb8115a7",
+    "semantic_hash": "311b096266fadfde3173a6f2cb8115a7"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\core\\interceptors\\auth.interceptor.ts": {
+    "mtime": 1781829228.610954,
+    "ast_hash": "b462f8946e44af014f57f5526d92da05",
+    "semantic_hash": "b462f8946e44af014f57f5526d92da05"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\core\\models\\user.model.ts": {
+    "mtime": 1781829219.7619655,
+    "ast_hash": "f605e40491ab967eb68c349a78af73c0",
+    "semantic_hash": "f605e40491ab967eb68c349a78af73c0"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\core\\services\\auth.service.ts": {
+    "mtime": 1781829225.4669368,
+    "ast_hash": "a7464b9f851641eed165c7359ea650ee",
+    "semantic_hash": "a7464b9f851641eed165c7359ea650ee"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\core\\services\\catalogo.service.ts": {
+    "mtime": 1782017809.6259294,
+    "ast_hash": "e20e9f6708b88fd5b66d6c1314ef6449",
+    "semantic_hash": "e20e9f6708b88fd5b66d6c1314ef6449"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\core\\services\\confirm.service.ts": {
+    "mtime": 1781853507.358381,
+    "ast_hash": "c79ba9386c773deda8766f215db44ef8",
+    "semantic_hash": "c79ba9386c773deda8766f215db44ef8"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\core\\services\\notification.service.ts": {
+    "mtime": 1781852262.3545985,
+    "ast_hash": "1affc49552df98112bb59571f5f1bbfd",
+    "semantic_hash": "1affc49552df98112bb59571f5f1bbfd"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\core\\services\\theme.service.ts": {
+    "mtime": 1781851673.130764,
+    "ast_hash": "dee44d3d5373b61965cec43cc60da8e3",
+    "semantic_hash": "dee44d3d5373b61965cec43cc60da8e3"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\core\\services\\toast.service.ts": {
+    "mtime": 1781852228.0129542,
+    "ast_hash": "d51f860183dbbb4688af88c0676aab33",
+    "semantic_hash": "d51f860183dbbb4688af88c0676aab33"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\dashboard\\dashboard.component.ts": {
+    "mtime": 1781850169.5492365,
+    "ast_hash": "ecbdec714ff34e22ef6c7947e2580256",
+    "semantic_hash": "ecbdec714ff34e22ef6c7947e2580256"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\dashboard\\dashboard.module.ts": {
+    "mtime": 1781829976.3222995,
+    "ast_hash": "ed1b34640b190589937e09b3c5ca73f3",
+    "semantic_hash": "ed1b34640b190589937e09b3c5ca73f3"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\empresas\\empresas.module.ts": {
+    "mtime": 1781898172.335524,
+    "ast_hash": "545bb24948c3e9b6ed672c0cf19c018d",
+    "semantic_hash": "545bb24948c3e9b6ed672c0cf19c018d"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\empresas\\form\\empresa-form.component.ts": {
+    "mtime": 1781898156.450121,
+    "ast_hash": "61103c4a6653624374811c84ecf7a04f",
+    "semantic_hash": "61103c4a6653624374811c84ecf7a04f"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\empresas\\list\\empresas-list.component.ts": {
+    "mtime": 1781898128.4085915,
+    "ast_hash": "078e0bb8aafb6cce2bd04c505e2fe61e",
+    "semantic_hash": "078e0bb8aafb6cce2bd04c505e2fe61e"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\empresas\\models\\empresa.model.ts": {
+    "mtime": 1781898109.3719864,
+    "ast_hash": "17c87fe40504e5fa202199a181b11ffb",
+    "semantic_hash": "17c87fe40504e5fa202199a181b11ffb"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\empresas\\services\\empresa.service.ts": {
+    "mtime": 1781898113.9505422,
+    "ast_hash": "a5b5069d7a8c32630a856883463a3118",
+    "semantic_hash": "a5b5069d7a8c32630a856883463a3118"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\inspectores\\form\\inspector-form.component.ts": {
+    "mtime": 1782259499.3124385,
+    "ast_hash": "7da9532ad33ec888bfec00b710770d77",
+    "semantic_hash": "7da9532ad33ec888bfec00b710770d77"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\inspectores\\inspectores.module.ts": {
+    "mtime": 1782259522.211384,
+    "ast_hash": "4cf65f8f4c28ebc47c203cf653a718cd",
+    "semantic_hash": "4cf65f8f4c28ebc47c203cf653a718cd"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\inspectores\\list\\inspectores-list.component.ts": {
+    "mtime": 1782259469.825565,
+    "ast_hash": "ce2ae9a28219969dce36bfb6c825bf00",
+    "semantic_hash": "ce2ae9a28219969dce36bfb6c825bf00"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\inspectores\\models\\inspector.model.ts": {
+    "mtime": 1782259454.4073272,
+    "ast_hash": "606f81e1a2325f1757d3d87655f9d97e",
+    "semantic_hash": "606f81e1a2325f1757d3d87655f9d97e"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\inspectores\\services\\inspector.service.ts": {
+    "mtime": 1782259460.605768,
+    "ast_hash": "5c0785ac03c1221312942b02d8b13cbf",
+    "semantic_hash": "5c0785ac03c1221312942b02d8b13cbf"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\layout\\layout.component.ts": {
+    "mtime": 1782259529.983332,
+    "ast_hash": "c2a62fe50cf3a0293b3956575c12b28c",
+    "semantic_hash": "c2a62fe50cf3a0293b3956575c12b28c"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\layout\\layout.module.ts": {
+    "mtime": 1782259536.0406706,
+    "ast_hash": "5aa5777e813750ea05029940cd57014b",
+    "semantic_hash": "5aa5777e813750ea05029940cd57014b"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\referencia\\referencia.component.ts": {
+    "mtime": 1782019137.200136,
+    "ast_hash": "6cb10771a1d7499aa5818baf1b5a1f81",
+    "semantic_hash": "6cb10771a1d7499aa5818baf1b5a1f81"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\referencia\\referencia.module.ts": {
+    "mtime": 1782019246.1853032,
+    "ast_hash": "4fe1c1cf592cc32c83b522e24ffb37c3",
+    "semantic_hash": "4fe1c1cf592cc32c83b522e24ffb37c3"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\shared\\components\\confirm-dialog\\confirm-dialog.component.ts": {
+    "mtime": 1781893049.1002984,
+    "ast_hash": "0a1f71a1022b91feba7ebe300dfe7b39",
+    "semantic_hash": "0a1f71a1022b91feba7ebe300dfe7b39"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\shared\\components\\data-review-modal\\data-review-modal.component.ts": {
+    "mtime": 1781894374.1504478,
+    "ast_hash": "f321442003ca0f444571cc8f5d25e36e",
+    "semantic_hash": "f321442003ca0f444571cc8f5d25e36e"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\shared\\components\\pagination\\pagination.component.ts": {
+    "mtime": 1781845699.1430879,
+    "ast_hash": "6836d414712b76c8f7672e11defd85e2",
+    "semantic_hash": "6836d414712b76c8f7672e11defd85e2"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\shared\\components\\searchable-select\\searchable-select.component.ts": {
+    "mtime": 1781900388.4814978,
+    "ast_hash": "e69d70c25cd0d4af055b45b36c4d67b0",
+    "semantic_hash": "e69d70c25cd0d4af055b45b36c4d67b0"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\shared\\components\\sort-header\\sort-header.component.ts": {
+    "mtime": 1781895476.2682872,
+    "ast_hash": "2ae55fb6210f6f14253997fe4e2c8b42",
+    "semantic_hash": "2ae55fb6210f6f14253997fe4e2c8b42"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\shared\\components\\toast\\toast.component.ts": {
+    "mtime": 1781852238.11259,
+    "ast_hash": "a068471171cb168a1af87165d66754ac",
+    "semantic_hash": "a068471171cb168a1af87165d66754ac"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\soldadores\\form\\soldador-form.component.ts": {
+    "mtime": 1782259573.6227062,
+    "ast_hash": "61fd509f40ab88bab4df219a925ccb84",
+    "semantic_hash": "61fd509f40ab88bab4df219a925ccb84"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\soldadores\\list\\soldadores-list.component.ts": {
+    "mtime": 1781895515.2782822,
+    "ast_hash": "860d8f9116e581c7c3d31bbd5168fc4d",
+    "semantic_hash": "860d8f9116e581c7c3d31bbd5168fc4d"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\soldadores\\models\\soldador.model.ts": {
+    "mtime": 1782259541.600728,
+    "ast_hash": "3b88f830b4804c0a13135254948193ed",
+    "semantic_hash": "3b88f830b4804c0a13135254948193ed"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\soldadores\\services\\soldador.service.ts": {
+    "mtime": 1782259546.1954303,
+    "ast_hash": "b8dd1613bb053ee15cdde022217ba324",
+    "semantic_hash": "b8dd1613bb053ee15cdde022217ba324"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\soldadores\\soldadores.module.ts": {
+    "mtime": 1781895497.3796759,
+    "ast_hash": "6dcbd97d23b9525141a3c158b9d401a5",
+    "semantic_hash": "6dcbd97d23b9525141a3c158b9d401a5"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\usuarios\\form\\usuario-form.component.ts": {
+    "mtime": 1781898289.827564,
+    "ast_hash": "7547568fccc0b0f20459fe5478c3a217",
+    "semantic_hash": "7547568fccc0b0f20459fe5478c3a217"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\usuarios\\list\\usuarios-list.component.ts": {
+    "mtime": 1781898264.3104708,
+    "ast_hash": "72bfcd1867c69c4f87515bf20787ad16",
+    "semantic_hash": "72bfcd1867c69c4f87515bf20787ad16"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\usuarios\\models\\usuario.model.ts": {
+    "mtime": 1781898243.5518389,
+    "ast_hash": "4aa279ccf4ac8d7b958bf7ca5a495ca8",
+    "semantic_hash": "4aa279ccf4ac8d7b958bf7ca5a495ca8"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\usuarios\\services\\usuario.service.ts": {
+    "mtime": 1781898245.537763,
+    "ast_hash": "3141e13ccd18d782144346133cc86eeb",
+    "semantic_hash": "3141e13ccd18d782144346133cc86eeb"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\usuarios\\usuarios.module.ts": {
+    "mtime": 1781898304.8462105,
+    "ast_hash": "bba1c4adc7a73d01874aea294c62bbd5",
+    "semantic_hash": "bba1c4adc7a73d01874aea294c62bbd5"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\environments\\environment.development.ts": {
+    "mtime": 1781829218.7404313,
+    "ast_hash": "c17dfdc6929ba6ad51e13d0da869dc4c",
+    "semantic_hash": "c17dfdc6929ba6ad51e13d0da869dc4c"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\environments\\environment.ts": {
+    "mtime": 1781829217.704432,
+    "ast_hash": "544a502e2f447ddb96c0f32cf9979f66",
+    "semantic_hash": "544a502e2f447ddb96c0f32cf9979f66"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\main.ts": {
+    "mtime": 1781809910.5617557,
+    "ast_hash": "dd672ae6e91345c2468a72ee1e4853c9",
+    "semantic_hash": "dd672ae6e91345c2468a72ee1e4853c9"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\AuthController.php": {
+    "mtime": 1781809698.8993154,
+    "ast_hash": "9db495dc493eda044e4a339e637c3f08",
+    "semantic_hash": "9db495dc493eda044e4a339e637c3f08"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\CatalogoController.php": {
+    "mtime": 1782017803.8697472,
+    "ast_hash": "cd381880c08a4a6a6f7b536bcc5aa519",
+    "semantic_hash": "cd381880c08a4a6a6f7b536bcc5aa519"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\CertificadoController.php": {
+    "mtime": 1782258264.939963,
+    "ast_hash": "e64e95d92306cb4bf42f0c9e580cdf9e",
+    "semantic_hash": "e64e95d92306cb4bf42f0c9e580cdf9e"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\DashboardController.php": {
+    "mtime": 1781829925.4733799,
+    "ast_hash": "3f0588343b1962a332fe24302f0bbf13",
+    "semantic_hash": "3f0588343b1962a332fe24302f0bbf13"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\EmpresaController.php": {
+    "mtime": 1781898100.5095265,
+    "ast_hash": "7c45adc99264236b8e8278b65b1fe304",
+    "semantic_hash": "7c45adc99264236b8e8278b65b1fe304"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\InspectorController.php": {
+    "mtime": 1782258274.4466221,
+    "ast_hash": "07af6109180aed55e8beffd9467b94fb",
+    "semantic_hash": "07af6109180aed55e8beffd9467b94fb"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\MaterialController.php": {
+    "mtime": 1781809746.847513,
+    "ast_hash": "b96a5ecaf652639e9b453b01f0deeca6",
+    "semantic_hash": "b96a5ecaf652639e9b453b01f0deeca6"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\NormaController.php": {
+    "mtime": 1781809740.2134833,
+    "ast_hash": "9c4f83560a46c99b732ceab0daa0f4ce",
+    "semantic_hash": "9c4f83560a46c99b732ceab0daa0f4ce"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\ProcesoController.php": {
+    "mtime": 1781809733.6574326,
+    "ast_hash": "f22902551716b71fb2665c9e247eb2e0",
+    "semantic_hash": "f22902551716b71fb2665c9e247eb2e0"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\SoldadorController.php": {
+    "mtime": 1782258305.3462982,
+    "ast_hash": "c6456a296c72c9b07413b049ebed34ec",
+    "semantic_hash": "c6456a296c72c9b07413b049ebed34ec"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\UserController.php": {
+    "mtime": 1781898238.1628213,
+    "ast_hash": "8093e33571d05767f086dc3eda1b80db",
+    "semantic_hash": "8093e33571d05767f086dc3eda1b80db"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Api\\VerificacionController.php": {
+    "mtime": 1782251968.9274683,
+    "ast_hash": "7143abfda274dbe94a585c0f1df1baa1",
+    "semantic_hash": "7143abfda274dbe94a585c0f1df1baa1"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Controllers\\Controller.php": {
+    "mtime": 1781807314.0579753,
+    "ast_hash": "25a307335c0719bc9a91b3f7babd186d",
+    "semantic_hash": "25a307335c0719bc9a91b3f7babd186d"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Requests\\Concerns\\ValidaCombinacionesNorma.php": {
+    "mtime": 1781930393.2358549,
+    "ast_hash": "158d71aecd90b8d5f9ed2dcbdb286940",
+    "semantic_hash": "158d71aecd90b8d5f9ed2dcbdb286940"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Requests\\StoreCertificadoRequest.php": {
+    "mtime": 1782238387.7785244,
+    "ast_hash": "05bcb7e2070e7b562b23c9ec3776bf99",
+    "semantic_hash": "05bcb7e2070e7b562b23c9ec3776bf99"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Requests\\StoreSoldadorRequest.php": {
+    "mtime": 1781844655.9866073,
+    "ast_hash": "ec3c87b308ee40e95e4506ffc69db707",
+    "semantic_hash": "ec3c87b308ee40e95e4506ffc69db707"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Requests\\UpdateCertificadoRequest.php": {
+    "mtime": 1782251946.2274828,
+    "ast_hash": "d161554f47771fd61afd3af8e8f8b807",
+    "semantic_hash": "d161554f47771fd61afd3af8e8f8b807"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Requests\\UpdateSoldadorRequest.php": {
+    "mtime": 1781844658.5736701,
+    "ast_hash": "44b310cbf7c904029ccc3a7bb577b4e1",
+    "semantic_hash": "44b310cbf7c904029ccc3a7bb577b4e1"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Http\\Resources\\SoldadorResource.php": {
+    "mtime": 1781844660.959486,
+    "ast_hash": "ffd437038be51d8bc9400b57283b3e34",
+    "semantic_hash": "ffd437038be51d8bc9400b57283b3e34"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\Certificado.php": {
+    "mtime": 1782238325.6193292,
+    "ast_hash": "c6536042ac8f50f1d46d634dcd798cc7",
+    "semantic_hash": "c6536042ac8f50f1d46d634dcd798cc7"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\CertificatePasse.php": {
+    "mtime": 1781904589.6820414,
+    "ast_hash": "38aaf65a75ba538a791dc0eaad4c9ccd",
+    "semantic_hash": "38aaf65a75ba538a791dc0eaad4c9ccd"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\CertificateRange.php": {
+    "mtime": 1781904591.075071,
+    "ast_hash": "4d48a686947e0733053dde606f2cc58c",
+    "semantic_hash": "4d48a686947e0733053dde606f2cc58c"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\CertificateTest.php": {
+    "mtime": 1781904586.2028556,
+    "ast_hash": "8ccb4fd2aa93f2b1f96b690c4ad396a4",
+    "semantic_hash": "8ccb4fd2aa93f2b1f96b690c4ad396a4"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\Consumible.php": {
+    "mtime": 1781925552.9646654,
+    "ast_hash": "db112d7a5957a215ab5278bed3d08a0f",
+    "semantic_hash": "db112d7a5957a215ab5278bed3d08a0f"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\DiameterRule.php": {
+    "mtime": 1781904576.5730348,
+    "ast_hash": "322b68f1e99088201f4e2bad44fd60c5",
+    "semantic_hash": "322b68f1e99088201f4e2bad44fd60c5"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\Empresa.php": {
+    "mtime": 1781809633.741181,
+    "ast_hash": "ab84b5388c2d023abd6c7a1f9682aec2",
+    "semantic_hash": "ab84b5388c2d023abd6c7a1f9682aec2"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\GrupoBaseMetal.php": {
+    "mtime": 1781925549.9882777,
+    "ast_hash": "327b4a36a6fedd7ff25aeb1c1074491f",
+    "semantic_hash": "327b4a36a6fedd7ff25aeb1c1074491f"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\GrupoConsumible.php": {
+    "mtime": 1781925551.5838022,
+    "ast_hash": "100794ed137fc3df566d543efa4695c7",
+    "semantic_hash": "100794ed137fc3df566d543efa4695c7"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\Inspector.php": {
+    "mtime": 1782238305.8690388,
+    "ast_hash": "4c39c3d3367949911d6380144b05b1fb",
+    "semantic_hash": "4c39c3d3367949911d6380144b05b1fb"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\JointDesign.php": {
+    "mtime": 1781904572.6214747,
+    "ast_hash": "036df8d687b9b5708f5d546d298e3975",
+    "semantic_hash": "036df8d687b9b5708f5d546d298e3975"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\Material.php": {
+    "mtime": 1781809922.0186796,
+    "ast_hash": "9517b31d1abed4ab44908e4b60c15fd9",
+    "semantic_hash": "9517b31d1abed4ab44908e4b60c15fd9"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\Norma.php": {
+    "mtime": 1781925561.7129612,
+    "ast_hash": "0131135ef3370c83cf2408a044a0886a",
+    "semantic_hash": "0131135ef3370c83cf2408a044a0886a"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\Posicion.php": {
+    "mtime": 1781828672.0399783,
+    "ast_hash": "0490bba1e5b60f4346bc75334fe46f6b",
+    "semantic_hash": "0490bba1e5b60f4346bc75334fe46f6b"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\Proceso.php": {
+    "mtime": 1781809640.9820015,
+    "ast_hash": "22a3399a5691e3628797b9edab014894",
+    "semantic_hash": "22a3399a5691e3628797b9edab014894"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\QualifiedPosition.php": {
+    "mtime": 1781904578.84508,
+    "ast_hash": "18551b571fed83d38db206401e3c9661",
+    "semantic_hash": "18551b571fed83d38db206401e3c9661"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\Soldador.php": {
+    "mtime": 1782238338.3468637,
+    "ast_hash": "d712df3f0b209d99836edc14fa523cf6",
+    "semantic_hash": "d712df3f0b209d99836edc14fa523cf6"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\TestType.php": {
+    "mtime": 1781904583.9954278,
+    "ast_hash": "827139b984419ec3dfe255689aae1833",
+    "semantic_hash": "827139b984419ec3dfe255689aae1833"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\ThicknessRule.php": {
+    "mtime": 1781904575.1923301,
+    "ast_hash": "8af6cbcebb516862f2351b45d392dd5e",
+    "semantic_hash": "8af6cbcebb516862f2351b45d392dd5e"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\User.php": {
+    "mtime": 1781809618.46817,
+    "ast_hash": "b0ce09d0bd1220a35c386f903b4e2da1",
+    "semantic_hash": "b0ce09d0bd1220a35c386f903b4e2da1"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Models\\WelderEvent.php": {
+    "mtime": 1781904596.0417192,
+    "ast_hash": "9034ba99d6714b3765523dd874de4212",
+    "semantic_hash": "9034ba99d6714b3765523dd874de4212"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Providers\\AppServiceProvider.php": {
+    "mtime": 1781807314.0589743,
+    "ast_hash": "c0094f35cad6bba7636002a62186dae4",
+    "semantic_hash": "c0094f35cad6bba7636002a62186dae4"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Services\\PdfCertificadoService.php": {
+    "mtime": 1782258732.8233619,
+    "ast_hash": "86fb0500855c4e9f52b0b3a77cd2ac8a",
+    "semantic_hash": "86fb0500855c4e9f52b0b3a77cd2ac8a"
+  },
+  "C:\\laragon\\www\\kocert\\api\\app\\Services\\RangeCalculatorService.php": {
+    "mtime": 1781904696.6096485,
+    "ast_hash": "7dbcc1b553cb7cc7923f988ffe5433a8",
+    "semantic_hash": "7dbcc1b553cb7cc7923f988ffe5433a8"
+  },
+  "C:\\laragon\\www\\kocert\\api\\routes\\api.php": {
+    "mtime": 1782258309.465245,
+    "ast_hash": "42820b6638c5715feef91860b7e6c2f0",
+    "semantic_hash": "42820b6638c5715feef91860b7e6c2f0"
+  },
+  "C:\\laragon\\www\\kocert\\api\\routes\\console.php": {
+    "mtime": 1781807314.072976,
+    "ast_hash": "3c6ce2e6d16444282b24a9aa63885563",
+    "semantic_hash": "3c6ce2e6d16444282b24a9aa63885563"
+  },
+  "C:\\laragon\\www\\kocert\\api\\routes\\web.php": {
+    "mtime": 1781807314.072976,
+    "ast_hash": "84625c52e743b1a4178bb27b7afb3615",
+    "semantic_hash": "84625c52e743b1a4178bb27b7afb3615"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\app.php": {
+    "mtime": 1781807314.0619736,
+    "ast_hash": "276578ad68424be59d0998379ae7d4cb",
+    "semantic_hash": "276578ad68424be59d0998379ae7d4cb"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\auth.php": {
+    "mtime": 1781807314.0619736,
+    "ast_hash": "26354511ab860b301f2a3554bc388b91",
+    "semantic_hash": "26354511ab860b301f2a3554bc388b91"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\cache.php": {
+    "mtime": 1781807314.0619736,
+    "ast_hash": "399c7a3b4bca7e3cb9b622828682ab56",
+    "semantic_hash": "399c7a3b4bca7e3cb9b622828682ab56"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\database.php": {
+    "mtime": 1781807314.0629745,
+    "ast_hash": "594a01554ab7583541a8fb05a69f935f",
+    "semantic_hash": "594a01554ab7583541a8fb05a69f935f"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\filesystems.php": {
+    "mtime": 1781807314.0629745,
+    "ast_hash": "bde1aa1027f0448f17348dbd93f3d7ea",
+    "semantic_hash": "bde1aa1027f0448f17348dbd93f3d7ea"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\logging.php": {
+    "mtime": 1781807314.0639744,
+    "ast_hash": "d8255a5c07d3da72c7c9363f0c44bddd",
+    "semantic_hash": "d8255a5c07d3da72c7c9363f0c44bddd"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\mail.php": {
+    "mtime": 1781807314.0639744,
+    "ast_hash": "18601a927b48d38337ba2077426a7d60",
+    "semantic_hash": "18601a927b48d38337ba2077426a7d60"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\mpdf.php": {
+    "mtime": 1782243424.3133562,
+    "ast_hash": "95aa80c058df7a376875f5cceb1c715c",
+    "semantic_hash": "95aa80c058df7a376875f5cceb1c715c"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\queue.php": {
+    "mtime": 1781807314.0639744,
+    "ast_hash": "f98ce92e7bf51db1fabaf8a30e12fc5a",
+    "semantic_hash": "f98ce92e7bf51db1fabaf8a30e12fc5a"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\sanctum.php": {
+    "mtime": 1781808739.968537,
+    "ast_hash": "42e82e2cc74d771f2519f4b6132972b0",
+    "semantic_hash": "42e82e2cc74d771f2519f4b6132972b0"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\services.php": {
+    "mtime": 1781807314.0649745,
+    "ast_hash": "534a1b7af7009c373ea4ebfa18823d57",
+    "semantic_hash": "534a1b7af7009c373ea4ebfa18823d57"
+  },
+  "C:\\laragon\\www\\kocert\\api\\config\\session.php": {
+    "mtime": 1781807314.0649745,
+    "ast_hash": "5ea7169252ec3cc7fad471f5cd0d7678",
+    "semantic_hash": "5ea7169252ec3cc7fad471f5cd0d7678"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\factories\\UserFactory.php": {
+    "mtime": 1781807314.065976,
+    "ast_hash": "1c9f381f9c2bc3027971a3bfdbe99164",
+    "semantic_hash": "1c9f381f9c2bc3027971a3bfdbe99164"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\0001_01_01_000000_create_users_table.php": {
+    "mtime": 1781809030.8452382,
+    "ast_hash": "e656ed03d2c6d0c9e624791706376841",
+    "semantic_hash": "e656ed03d2c6d0c9e624791706376841"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\0001_01_01_000001_create_cache_table.php": {
+    "mtime": 1781807314.0669732,
+    "ast_hash": "6952fb360e8d8b84e6f47573e4459d48",
+    "semantic_hash": "6952fb360e8d8b84e6f47573e4459d48"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\0001_01_01_000002_create_jobs_table.php": {
+    "mtime": 1781807314.0669732,
+    "ast_hash": "b0603b9fa0a27473971da76bb0c42ee1",
+    "semantic_hash": "b0603b9fa0a27473971da76bb0c42ee1"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_185220_create_personal_access_tokens_table.php": {
+    "mtime": 1781808739.966541,
+    "ast_hash": "b3e31d985f5a122c629202231dc2d788",
+    "semantic_hash": "b3e31d985f5a122c629202231dc2d788"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_185923_create_soldadores_table.php": {
+    "mtime": 1781809184.8846765,
+    "ast_hash": "fb5dec1584b2c46d5105b25a0c64aa5b",
+    "semantic_hash": "fb5dec1584b2c46d5105b25a0c64aa5b"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_185924_create_empresas_table.php": {
+    "mtime": 1781809189.561878,
+    "ast_hash": "d1f028e7b861589159dce78aa3429a29",
+    "semantic_hash": "d1f028e7b861589159dce78aa3429a29"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_185924_create_materiales_table.php": {
+    "mtime": 1781809203.7701893,
+    "ast_hash": "436cd08cdebd9abb780dea39ff583080",
+    "semantic_hash": "436cd08cdebd9abb780dea39ff583080"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_185924_create_normas_table.php": {
+    "mtime": 1781809198.9070318,
+    "ast_hash": "1d77508112a656cf15b92847e726c04d",
+    "semantic_hash": "1d77508112a656cf15b92847e726c04d"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_185924_create_procesos_table.php": {
+    "mtime": 1781809194.3471127,
+    "ast_hash": "4b8abc259a028b247aa1271d0663d1d7",
+    "semantic_hash": "4b8abc259a028b247aa1271d0663d1d7"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_185925_create_certificados_table.php": {
+    "mtime": 1781809212.5468655,
+    "ast_hash": "f80598edef59709585c5276eabbe6ccc",
+    "semantic_hash": "f80598edef59709585c5276eabbe6ccc"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190001_alter_soldadores_add_campos.php": {
+    "mtime": 1781825323.5396557,
+    "ast_hash": "b4609c5fb2f8e6b21978fb909287a2d6",
+    "semantic_hash": "b4609c5fb2f8e6b21978fb909287a2d6"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190002_create_posiciones_table.php": {
+    "mtime": 1781825337.6595259,
+    "ast_hash": "39501713e51e64b572f2573fecdd657a",
+    "semantic_hash": "39501713e51e64b572f2573fecdd657a"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190003_create_grupos_base_metal_table.php": {
+    "mtime": 1781925495.002554,
+    "ast_hash": "a2b270c4e995b8f4cded240fefca600b",
+    "semantic_hash": "a2b270c4e995b8f4cded240fefca600b"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190004_create_grupos_consumible_table.php": {
+    "mtime": 1781925497.754683,
+    "ast_hash": "9ba1b93dbee7d30baf6d7a47568beb16",
+    "semantic_hash": "9ba1b93dbee7d30baf6d7a47568beb16"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190005_create_consumibles_table.php": {
+    "mtime": 1781926307.0931773,
+    "ast_hash": "593e484bcec4078fd7ea4e55004217f0",
+    "semantic_hash": "593e484bcec4078fd7ea4e55004217f0"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190006_alter_normas_add_parent.php": {
+    "mtime": 1781925504.8976476,
+    "ast_hash": "7a0d346821efa8fe65f4f808a3bfe7d1",
+    "semantic_hash": "7a0d346821efa8fe65f4f808a3bfe7d1"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190007_create_norma_proceso_table.php": {
+    "mtime": 1781928692.6647131,
+    "ast_hash": "73609367dae9c32805f66ca841aa1aa5",
+    "semantic_hash": "73609367dae9c32805f66ca841aa1aa5"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190008_create_grupo_base_metal_consumible_table.php": {
+    "mtime": 1781928694.953035,
+    "ast_hash": "5c9f5d36197ffaeabe86447f7f4f8b18",
+    "semantic_hash": "5c9f5d36197ffaeabe86447f7f4f8b18"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190009_create_grupo_consumible_posicion_table.php": {
+    "mtime": 1781928697.66806,
+    "ast_hash": "0d5ff81dbce5824c27286613706d5583",
+    "semantic_hash": "0d5ff81dbce5824c27286613706d5583"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190009_recreate_certificados_table.php": {
+    "mtime": 1781825432.669525,
+    "ast_hash": "bdb281a5a1b53cf9d3f15eacb62a3c73",
+    "semantic_hash": "bdb281a5a1b53cf9d3f15eacb62a3c73"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190010_create_grupo_base_metal_calificado_table.php": {
+    "mtime": 1781928701.1447618,
+    "ast_hash": "f2263a8280406bd174abf4e251082ac2",
+    "semantic_hash": "f2263a8280406bd174abf4e251082ac2"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_18_190011_create_grupo_consumible_calificado_table.php": {
+    "mtime": 1781928703.8967912,
+    "ast_hash": "6a6caed1781304b6cc88fcfe1b549671",
+    "semantic_hash": "6a6caed1781304b6cc88fcfe1b549671"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_19_000001_create_thickness_rules_table.php": {
+    "mtime": 1781904394.2695234,
+    "ast_hash": "b7846343e806ee2fbf4266a7ba8072b0",
+    "semantic_hash": "b7846343e806ee2fbf4266a7ba8072b0"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_19_000002_create_diameter_rules_table.php": {
+    "mtime": 1781904397.4261088,
+    "ast_hash": "0a50aa7c17cfe535a0bc536f7c9c45b4",
+    "semantic_hash": "0a50aa7c17cfe535a0bc536f7c9c45b4"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_19_000003_create_qualified_positions_table.php": {
+    "mtime": 1781904401.0999713,
+    "ast_hash": "0c3445918aac6b6ea70867d11439f146",
+    "semantic_hash": "0c3445918aac6b6ea70867d11439f146"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_19_000004_create_test_types_table.php": {
+    "mtime": 1781904404.0828063,
+    "ast_hash": "7616dc17b3215cafcd6fcf73e7141c28",
+    "semantic_hash": "7616dc17b3215cafcd6fcf73e7141c28"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_19_000005_create_certificate_tests_table.php": {
+    "mtime": 1781904412.235155,
+    "ast_hash": "757663ce48488f9e5bd07ff520c4ae07",
+    "semantic_hash": "757663ce48488f9e5bd07ff520c4ae07"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_19_000006_create_certificate_passes_table.php": {
+    "mtime": 1781904419.7853093,
+    "ast_hash": "7397c614b5a14a863fee7b3eb7305c61",
+    "semantic_hash": "7397c614b5a14a863fee7b3eb7305c61"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_19_000007_create_joint_designs_table.php": {
+    "mtime": 1781904423.220925,
+    "ast_hash": "e143f9fb785a8ebcebd6e08be018545d",
+    "semantic_hash": "e143f9fb785a8ebcebd6e08be018545d"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_19_000008_create_welder_events_table.php": {
+    "mtime": 1781904428.5021627,
+    "ast_hash": "3ac48694b50ee080c2678599fb08958e",
+    "semantic_hash": "3ac48694b50ee080c2678599fb08958e"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_19_000009_add_range_tracking_to_certificados.php": {
+    "mtime": 1781904441.4000094,
+    "ast_hash": "78a942825fc27c4dc00dec0ccbe7d60e",
+    "semantic_hash": "78a942825fc27c4dc00dec0ccbe7d60e"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_21_000001_add_borrador_to_certificados.php": {
+    "mtime": 1782022767.5909903,
+    "ast_hash": "09b33d0704b5443776aeb4e820ede158",
+    "semantic_hash": "09b33d0704b5443776aeb4e820ede158"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_21_000002_nullable_fks_for_borradores.php": {
+    "mtime": 1782022894.849113,
+    "ast_hash": "d3d46dc55d3b0b4ede63244f8c05bc7d",
+    "semantic_hash": "d3d46dc55d3b0b4ede63244f8c05bc7d"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_23_000001_create_inspectors_table.php": {
+    "mtime": 1782238256.699503,
+    "ast_hash": "c4dc012ed099d6e1a77149fd4e73d1d7",
+    "semantic_hash": "c4dc012ed099d6e1a77149fd4e73d1d7"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_23_000002_add_inspector_id_to_certificados.php": {
+    "mtime": 1782238274.7231362,
+    "ast_hash": "9a896346690076641d1bd93e88962a22",
+    "semantic_hash": "9a896346690076641d1bd93e88962a22"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\migrations\\2026_06_23_000003_add_foto_path_to_soldadores.php": {
+    "mtime": 1782238291.0542068,
+    "ast_hash": "b7094ab72fb34b867322ee64638cf776",
+    "semantic_hash": "b7094ab72fb34b867322ee64638cf776"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\ConsumibleSeeder.php": {
+    "mtime": 1781926438.3589773,
+    "ast_hash": "2ce4b68f02108cbbfa9fb9fc322280ef",
+    "semantic_hash": "2ce4b68f02108cbbfa9fb9fc322280ef"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\DatabaseSeeder.php": {
+    "mtime": 1782238413.0061622,
+    "ast_hash": "193bebf2a8ad6ae545c70b58125a4ff1",
+    "semantic_hash": "193bebf2a8ad6ae545c70b58125a4ff1"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\DiameterRuleSeeder.php": {
+    "mtime": 1781904475.2864864,
+    "ast_hash": "d25852cb44b9da61148c48541b175ed4",
+    "semantic_hash": "d25852cb44b9da61148c48541b175ed4"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\EmpresaSeeder.php": {
+    "mtime": 1781899958.6090682,
+    "ast_hash": "ebefd30ad878584ee3c40d136ba1fd0e",
+    "semantic_hash": "ebefd30ad878584ee3c40d136ba1fd0e"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\GrupoBaseMetalCalificadoSeeder.php": {
+    "mtime": 1781930208.966424,
+    "ast_hash": "55cae283fe95d43f1f96e53ed4be28ca",
+    "semantic_hash": "55cae283fe95d43f1f96e53ed4be28ca"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\GrupoBaseMetalConsumibleSeeder.php": {
+    "mtime": 1781930198.842713,
+    "ast_hash": "44a1955bc57d19b90ad56861f575b866",
+    "semantic_hash": "44a1955bc57d19b90ad56861f575b866"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\GrupoBaseMetalSeeder.php": {
+    "mtime": 1781926334.6960893,
+    "ast_hash": "d272ea2a446c0442be26ca35e6bb112b",
+    "semantic_hash": "d272ea2a446c0442be26ca35e6bb112b"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\GrupoConsumibleCalificadoSeeder.php": {
+    "mtime": 1781928802.2712939,
+    "ast_hash": "b8183d80262f2ce56586a1ced73f4fb3",
+    "semantic_hash": "b8183d80262f2ce56586a1ced73f4fb3"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\GrupoConsumiblePosicionSeeder.php": {
+    "mtime": 1781928759.832656,
+    "ast_hash": "4cf8852b400780e1e6583f54c1557856",
+    "semantic_hash": "4cf8852b400780e1e6583f54c1557856"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\GrupoConsumibleSeeder.php": {
+    "mtime": 1781926457.208732,
+    "ast_hash": "a6ec6c27b145818a58d67a23749f294a",
+    "semantic_hash": "a6ec6c27b145818a58d67a23749f294a"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\InspectorSeeder.php": {
+    "mtime": 1782238406.2781608,
+    "ast_hash": "b7f6f77cba9973265fe6d22b2e5b72d9",
+    "semantic_hash": "b7f6f77cba9973265fe6d22b2e5b72d9"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\JointDesignSeeder.php": {
+    "mtime": 1781904520.8802986,
+    "ast_hash": "9458ccdb76b67e263eb8fb3776ae38ff",
+    "semantic_hash": "9458ccdb76b67e263eb8fb3776ae38ff"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\NormaProcesoSeeder.php": {
+    "mtime": 1781928720.6727605,
+    "ast_hash": "8b64c30202021d3c78c4574ef5e7e6fa",
+    "semantic_hash": "8b64c30202021d3c78c4574ef5e7e6fa"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\PosicionSeeder.php": {
+    "mtime": 1781926347.9162016,
+    "ast_hash": "ff7257f945fa31fe8d3c3c9ebe3e1f27",
+    "semantic_hash": "ff7257f945fa31fe8d3c3c9ebe3e1f27"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\QualifiedPositionSeeder.php": {
+    "mtime": 1781904550.7842312,
+    "ast_hash": "3ecf132016bdbe31b847b26dc14eaae9",
+    "semantic_hash": "3ecf132016bdbe31b847b26dc14eaae9"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\SoldadorSeeder.php": {
+    "mtime": 1781899944.4767313,
+    "ast_hash": "6e176e8069ae91865fd0c61ce386d4ca",
+    "semantic_hash": "6e176e8069ae91865fd0c61ce386d4ca"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\TestTypeSeeder.php": {
+    "mtime": 1781904492.7287786,
+    "ast_hash": "48c1f076d1916076e090c73023e5ed5f",
+    "semantic_hash": "48c1f076d1916076e090c73023e5ed5f"
+  },
+  "C:\\laragon\\www\\kocert\\api\\database\\seeders\\ThicknessRuleSeeder.php": {
+    "mtime": 1781904463.3233063,
+    "ast_hash": "c558adad1722ff30276f3bd48c013f4b",
+    "semantic_hash": "c558adad1722ff30276f3bd48c013f4b"
+  },
+  "C:\\laragon\\www\\kocert\\app\\src\\app\\app.html": {
+    "mtime": 1781810139.808537,
+    "ast_hash": "c636cb0abcd134e37b0da69db9e8d823",
+    "semantic_hash": "c636cb0abcd134e37b0da69db9e8d823"
+  },
+  "C:\\laragon\\www\\kocert\\app\\src\\index.html": {
+    "mtime": 1781810139.8055377,
+    "ast_hash": "18eb946ca7bba9fa4f92bb451e24d95b",
+    "semantic_hash": "18eb946ca7bba9fa4f92bb451e24d95b"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\app.html": {
+    "mtime": 1781829370.9578373,
+    "ast_hash": "71460a42a419bbd4b18c0b69e9e7081d",
+    "semantic_hash": "71460a42a419bbd4b18c0b69e9e7081d"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\auth\\login\\login.component.html": {
+    "mtime": 1781845686.1306548,
+    "ast_hash": "bfb3e6c719fb9318882defb5942c69a3",
+    "semantic_hash": "bfb3e6c719fb9318882defb5942c69a3"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\certificados\\form\\certificado-form.component.html": {
+    "mtime": 1782259669.447869,
+    "ast_hash": "68cf63b88692260bb80919fb3082d3e4",
+    "semantic_hash": "68cf63b88692260bb80919fb3082d3e4"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\certificados\\list\\certificados-list.component.html": {
+    "mtime": 1782260016.1206596,
+    "ast_hash": "031c8f4918286194290daa5f735e72b3",
+    "semantic_hash": "031c8f4918286194290daa5f735e72b3"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\dashboard\\dashboard.component.html": {
+    "mtime": 1781849822.5714083,
+    "ast_hash": "b983f81ad3da8d43d1600e4cda627585",
+    "semantic_hash": "b983f81ad3da8d43d1600e4cda627585"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\empresas\\form\\empresa-form.component.html": {
+    "mtime": 1781898165.950739,
+    "ast_hash": "d543b38d4030b52391e207a464dc3632",
+    "semantic_hash": "d543b38d4030b52391e207a464dc3632"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\empresas\\list\\empresas-list.component.html": {
+    "mtime": 1781898142.7027826,
+    "ast_hash": "4bf07a63aaafebc7826ede13aee689e6",
+    "semantic_hash": "4bf07a63aaafebc7826ede13aee689e6"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\inspectores\\form\\inspector-form.component.html": {
+    "mtime": 1782259516.4386475,
+    "ast_hash": "ec286bd62a0fe9382dc2928368bac6a3",
+    "semantic_hash": "ec286bd62a0fe9382dc2928368bac6a3"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\inspectores\\list\\inspectores-list.component.html": {
+    "mtime": 1782259713.4176276,
+    "ast_hash": "a0c160f32761cb2bd9376ef6250723e0",
+    "semantic_hash": "a0c160f32761cb2bd9376ef6250723e0"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\layout\\layout.component.html": {
+    "mtime": 1781893059.3640864,
+    "ast_hash": "51ca3294b0c42ced230ba4aeec8f1eb6",
+    "semantic_hash": "51ca3294b0c42ced230ba4aeec8f1eb6"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\referencia\\referencia.component.html": {
+    "mtime": 1782019284.1921172,
+    "ast_hash": "8a5b2c2a952f7f03baf9a2fd54821c4b",
+    "semantic_hash": "8a5b2c2a952f7f03baf9a2fd54821c4b"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\shared\\components\\data-review-modal\\data-review-modal.component.html": {
+    "mtime": 1781894389.9284074,
+    "ast_hash": "a1b777b4ff225a89dcd559098cb9535f",
+    "semantic_hash": "a1b777b4ff225a89dcd559098cb9535f"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\shared\\components\\searchable-select\\searchable-select.component.html": {
+    "mtime": 1781900398.8056657,
+    "ast_hash": "32c886bfffba4b9aef8cd072806d3fee",
+    "semantic_hash": "32c886bfffba4b9aef8cd072806d3fee"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\soldadores\\form\\soldador-form.component.html": {
+    "mtime": 1782259719.0473351,
+    "ast_hash": "46789ec9a4785a0eafb87ca83f605ce5",
+    "semantic_hash": "46789ec9a4785a0eafb87ca83f605ce5"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\soldadores\\list\\soldadores-list.component.html": {
+    "mtime": 1781897094.2393355,
+    "ast_hash": "e86609a757153e32427db8d246979eb6",
+    "semantic_hash": "e86609a757153e32427db8d246979eb6"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\usuarios\\form\\usuario-form.component.html": {
+    "mtime": 1781898301.392051,
+    "ast_hash": "69f921d5898b4c5c60e52acd5aeb6f45",
+    "semantic_hash": "69f921d5898b4c5c60e52acd5aeb6f45"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\app\\usuarios\\list\\usuarios-list.component.html": {
+    "mtime": 1781898278.7069824,
+    "ast_hash": "126c1a319a736964151c6bbe552fbf40",
+    "semantic_hash": "126c1a319a736964151c6bbe552fbf40"
+  },
+  "C:\\laragon\\www\\kocert\\admin\\src\\index.html": {
+    "mtime": 1781809910.5627549,
+    "ast_hash": "b53b48b02c71dd3e38e2b21a33acc892",
+    "semantic_hash": "b53b48b02c71dd3e38e2b21a33acc892"
+  }
+}
