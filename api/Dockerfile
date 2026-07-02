@@ -2,7 +2,7 @@ FROM php:8.4-cli
 
 RUN apt-get update && apt-get install -y \
     libpng-dev libjpeg-dev libfreetype6-dev \
-    libzip-dev libxml2-dev libicu-dev \
+    libzip-dev libxml2-dev libicu-dev libonig-dev \
     libpq-dev zip unzip git curl \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
