@@ -4,11 +4,12 @@ RUN apt-get update && apt-get install -y \
     libpng-dev libjpeg-dev libfreetype6-dev \
     libzip-dev libxml2-dev libicu-dev \
     libpq-dev zip unzip git curl \
-    && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install -j$(nproc) \
-        gd pdo pdo_pgsql pgsql \
-        mbstring zip xml intl bcmath opcache exif fileinfo \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install gd
+
+RUN docker-php-ext-install pdo pdo_pgsql pgsql mbstring zip xml intl bcmath opcache exif
 
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
