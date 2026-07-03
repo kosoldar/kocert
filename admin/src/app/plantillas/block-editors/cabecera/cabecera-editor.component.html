@@ -1,0 +1,76 @@
+@if (!layout) {
+  <div class="d-flex align-items-center justify-content-center" style="height:100vh;">
+    <span class="spinner-border me-2"></span>
+  </div>
+}
+
+@if (layout && block) {
+<div class="d-flex flex-column" style="height:100vh;">
+
+  <!-- Toolbar -->
+  <div class="d-flex align-items-center gap-2 px-3 py-2 border-bottom bg-body-tertiary flex-wrap">
+    <button class="btn btn-sm btn-outline-secondary" (click)="goBack()">
+      <i class="bi bi-arrow-left me-1"></i>Volver
+    </button>
+    <span class="vr"></span>
+    <span class="fw-semibold small">
+      <i class="bi bi-layout-text-window-reverse me-1" style="color:#1565c0;"></i>
+      Cabecera
+      <span class="text-muted fw-normal ms-1">
+        — la línea azul marca el límite inferior del bloque ({{ block.height | number:'1.0-0' }} mm)
+      </span>
+    </span>
+
+    <div class="ms-auto d-flex align-items-center gap-2">
+      <button class="btn btn-sm btn-outline-secondary px-2"
+              (click)="changeZoom(zoom - 0.25)" [disabled]="zoom <= 0.25">
+        <i class="bi bi-dash-lg"></i>
+      </button>
+      <span class="form-control form-control-sm text-center small user-select-none"
+            style="width:58px;cursor:default;">
+        {{ (zoom * 100) | number:'1.0-0' }}%
+      </span>
+      <button class="btn btn-sm btn-outline-secondary px-2"
+              (click)="changeZoom(zoom + 0.25)" [disabled]="zoom >= 3">
+        <i class="bi bi-plus-lg"></i>
+      </button>
+      <div class="vr"></div>
+      <button class="btn btn-sm btn-primary" (click)="save()" [disabled]="saving">
+        @if (saving) { <span class="spinner-border spinner-border-sm me-1"></span> }
+        @else         { <i class="bi bi-floppy me-1"></i> }
+        Guardar y volver
+      </button>
+    </div>
+  </div>
+
+  <!-- 3 columns: palette | canvas | properties -->
+  <div class="d-flex flex-grow-1 overflow-hidden">
+
+    <div class="border-end bg-body" style="width:180px;flex-shrink:0;overflow-y:auto;">
+      <app-block-palette mode="header"></app-block-palette>
+    </div>
+
+    <app-designer-canvas
+      orientation="portrait"
+      [initialLayout]="canvasLayout"
+      [zoom]="zoom"
+      (blockSelected)="onBlockSelected($event)"
+      (canvasChanged)="cdr.markForCheck()"
+      (zoomChanged)="changeZoom($event)">
+    </app-designer-canvas>
+
+    <div class="border-start bg-body" style="width:220px;flex-shrink:0;overflow-y:auto;">
+      <div class="px-2 py-2 border-bottom">
+        <span class="small fw-semibold text-muted text-uppercase">Propiedades</span>
+      </div>
+      <app-properties-panel
+        [block]="selectedBlock"
+        [activePageIndex]="0"
+        (changed)="onBlockChanged($event)"
+        (deleted)="onDeleteSelected()">
+      </app-properties-panel>
+    </div>
+
+  </div>
+</div>
+}

@@ -1,0 +1,157 @@
+<!-- Header -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h5 class="fw-bold mb-0">Certificados</h5>
+  <button class="btn btn-primary btn-sm" (click)="goNew()">
+    <i class="bi bi-plus-lg me-1"></i>Nuevo certificado
+  </button>
+</div>
+
+<div class="card">
+
+  <!-- Toolbar -->
+  <div class="card-header bg-body border-bottom py-3 d-flex align-items-center justify-content-between gap-3 flex-wrap">
+    <input type="text"
+           class="form-control form-control-sm"
+           style="max-width:260px"
+           placeholder="Buscar por soldador, DNI o número..."
+           [value]="searchTerm"
+           (input)="onSearch($any($event.target).value)" />
+
+    <div class="d-flex align-items-center gap-3 flex-wrap">
+      <select class="form-select form-select-sm w-auto" [(ngModel)]="estadoFiltro" (ngModelChange)="onEstado()">
+        <option value="">Todos los estados</option>
+        <option value="borrador">Borrador</option>
+        <option value="vigente">Vigente</option>
+        <option value="vencido">Vencido</option>
+        <option value="suspendido">Suspendido</option>
+      </select>
+
+      <div class="d-flex align-items-center gap-2 text-muted small">
+        <span>Mostrar</span>
+        <select class="form-select form-select-sm w-auto" [(ngModel)]="perPage" (ngModelChange)="onPerPage()">
+          @for (opt of perPageOpts; track opt) {
+            <option [value]="opt">{{ opt }}</option>
+          }
+        </select>
+        <span>por página</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-body p-0">
+
+    @if (loading) {
+      <div class="text-center py-5 text-muted">
+        <div class="spinner-border spinner-border-sm me-2"></div>Cargando...
+      </div>
+    }
+
+    @if (!loading && certificados.length === 0) {
+      <div class="text-center py-5 text-muted">
+        <i class="bi bi-file-earmark-text d-block fs-1 mb-2 opacity-25"></i>
+        <p class="mb-0">No hay certificados{{ searchTerm ? ' para "' + searchTerm + '"' : '' }}.</p>
+      </div>
+    }
+
+    @if (!loading && certificados.length > 0) {
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th class="ps-4" style="cursor:pointer" (click)="sort('numero')">
+                Código <i class="bi {{ sortIcon('numero') }} ms-1 small"></i>
+              </th>
+              <th>Soldador</th>
+              <th class="d-none d-md-table-cell">Empresa</th>
+              <th class="d-none d-lg-table-cell" style="cursor:pointer" (click)="sort('norma')">
+                Norma <i class="bi {{ sortIcon('norma') }} ms-1 small"></i>
+              </th>
+              <th class="d-none d-lg-table-cell" style="cursor:pointer" (click)="sort('proceso')">
+                Proceso <i class="bi {{ sortIcon('proceso') }} ms-1 small"></i>
+              </th>
+              <th style="cursor:pointer" (click)="sort('tipo')">
+                Tipo <i class="bi {{ sortIcon('tipo') }} ms-1 small"></i>
+              </th>
+              <th style="cursor:pointer" (click)="sort('estado')">
+                Estado <i class="bi {{ sortIcon('estado') }} ms-1 small"></i>
+              </th>
+              <th class="d-none d-lg-table-cell" style="cursor:pointer" (click)="sort('fecha_vencimiento')">
+                Vencimiento <i class="bi {{ sortIcon('fecha_vencimiento') }} ms-1 small"></i>
+              </th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (c of certificados; track c.id) {
+              <tr>
+                <td class="ps-4"><code class="fw-semibold">{{ c.codigo ?? (c.anio + '/' + c.numero) }}</code></td>
+                <td>
+                  <div class="fw-semibold small">{{ c.soldador?.nombre_completo ?? '—' }}</div>
+                  <div class="text-muted" style="font-size:.75rem">{{ c.soldador?.dni }}</div>
+                </td>
+                <td class="text-muted small d-none d-md-table-cell">{{ c.empresa?.nombre ?? '—' }}</td>
+                <td class="text-muted small d-none d-lg-table-cell">{{ c.norma?.nombre ?? '—' }}</td>
+                <td class="text-muted small d-none d-lg-table-cell">{{ c.proceso || '—' }}</td>
+                <td>
+                  <span class="badge rounded-pill bg-secondary-subtle text-secondary-emphasis small text-capitalize">
+                    {{ c.tipo }}
+                  </span>
+                </td>
+                <td>
+                  <span class="badge rounded-pill small text-capitalize" [ngClass]="estadoBadge(c.estado)">
+                    {{ c.estado }}
+                  </span>
+                </td>
+                <td class="text-muted small d-none d-lg-table-cell">
+                  {{ c.fecha_vencimiento ? (c.fecha_vencimiento | date:'dd/MM/yyyy') : '—' }}
+                </td>
+                <td class="text-end pe-3">
+                  <button class="btn-icon me-1" title="Ver PDF"
+                          [disabled]="pdfViewing === c.id || pdfLoading === c.id"
+                          (click)="viewPdf(c)">
+                    @if (pdfViewing === c.id) {
+                      <span class="spinner-border spinner-border-sm"></span>
+                    } @else {
+                      <i class="bi bi-eye"></i>
+                    }
+                  </button>
+                  <button class="btn-icon me-1" title="Descargar PDF"
+                          [disabled]="pdfLoading === c.id || pdfViewing === c.id"
+                          (click)="downloadPdf(c)">
+                    @if (pdfLoading === c.id) {
+                      <span class="spinner-border spinner-border-sm"></span>
+                    } @else {
+                      <i class="bi bi-file-earmark-arrow-down"></i>
+                    }
+                  </button>
+                  <button class="btn-icon me-1" title="Editar" (click)="goEdit(c)">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button class="btn-icon btn-icon--danger" title="Eliminar" (click)="confirmDelete(c)">
+                    <i class="bi bi-trash3"></i>
+                  </button>
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+
+      <div class="px-4 py-3 border-top">
+        <app-pagination [meta]="meta" (pageChange)="onPage($event)" />
+      </div>
+    }
+
+  </div>
+</div>
+
+@if (deleteTarget) {
+  <app-confirm-dialog
+    title="Eliminar certificado"
+    [message]="'¿Eliminás el certificado ' + (deleteTarget.codigo ?? '#' + deleteTarget.id) + '? Esta acción no se puede deshacer.'"
+    confirmLabel="Eliminar"
+    confirmClass="btn-danger"
+    (confirmed)="doDelete()"
+    (cancelled)="cancelDelete()">
+  </app-confirm-dialog>
+}

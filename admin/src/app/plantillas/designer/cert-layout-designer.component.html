@@ -1,0 +1,223 @@
+<!-- Toolbar -->
+<div class="d-flex align-items-center gap-2 px-3 py-2 border-bottom bg-body-tertiary flex-wrap">
+
+  <button class="btn btn-sm btn-outline-secondary" (click)="goBack()" title="Volver a plantillas">
+    <i class="bi bi-arrow-left"></i>
+  </button>
+
+  <input type="text" class="form-control form-control-sm" style="max-width:200px;"
+         [(ngModel)]="nombre" placeholder="Nombre de la plantilla">
+
+  <div class="d-flex align-items-center gap-1 ms-1">
+    <button class="btn btn-sm"
+            [class.btn-outline-secondary]="orientacion !== 'portrait'"
+            [class.btn-secondary]="orientacion === 'portrait'"
+            (click)="onOrientacionChange('portrait')" title="Vertical">
+      <i class="bi bi-file-earmark"></i>
+    </button>
+    <button class="btn btn-sm"
+            [class.btn-outline-secondary]="orientacion !== 'landscape'"
+            [class.btn-secondary]="orientacion === 'landscape'"
+            (click)="onOrientacionChange('landscape')" title="Horizontal">
+      <i class="bi bi-file-earmark" style="transform:rotate(90deg); display:inline-block;"></i>
+    </button>
+  </div>
+
+  <!-- Botón selector de normas -->
+  <button #normaBtnRef type="button"
+          class="btn btn-sm d-flex align-items-center gap-1 ms-1"
+          [class.btn-outline-secondary]="selectedNormaIds.size === 0"
+          [class.btn-primary]="selectedNormaIds.size > 0"
+          (click)="openNormaPicker(normaBtnRef)"
+          title="Normas que aplican a este layout">
+    <i class="bi bi-journal-code"></i>
+    <span style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+      {{ selectedNormaLabel }}
+    </span>
+    <i class="bi bi-chevron-down" style="font-size:.6rem;opacity:.7;"></i>
+  </button>
+
+  <div class="form-check form-switch mb-0 ms-1">
+    <input class="form-check-input" type="checkbox" id="esDefault" [(ngModel)]="esDefault">
+    <label class="form-check-label small" for="esDefault">Default</label>
+  </div>
+
+  <div class="ms-auto d-flex gap-2">
+    <button class="btn btn-sm btn-outline-primary"
+            (click)="openPreview()"
+            [disabled]="previewing || !layoutId"
+            title="{{ !layoutId ? 'Guardá primero' : 'Preview PDF' }}">
+      @if (previewing) {
+        <span class="spinner-border spinner-border-sm me-1"></span>
+      } @else {
+        <i class="bi bi-eye me-1"></i>
+      }
+      Preview
+    </button>
+
+    <button class="btn btn-sm btn-primary" (click)="save()" [disabled]="saving">
+      @if (saving) {
+        <span class="spinner-border spinner-border-sm me-1"></span>
+      } @else {
+        <i class="bi bi-floppy me-1"></i>
+      }
+      Guardar
+    </button>
+  </div>
+</div>
+
+<!-- 3-column layout -->
+<div class="d-flex" style="height: calc(100vh - 113px); overflow: hidden;">
+
+  <!-- Palette -->
+  <div class="border-end bg-body" style="width:180px; overflow-y:auto; flex-shrink:0;">
+    <app-block-palette></app-block-palette>
+  </div>
+
+  <!-- Canvas + tabs de página -->
+  <div class="d-flex flex-column flex-grow-1" style="min-width:0;">
+    <div class="d-flex align-items-center gap-1 px-2 py-1 border-bottom bg-body-tertiary flex-shrink-0">
+      @for (page of pages; track $index) {
+        <button type="button"
+                class="btn btn-sm d-flex align-items-center gap-1"
+                [class.btn-secondary]="$index === activePageIndex"
+                [class.btn-outline-secondary]="$index !== activePageIndex"
+                (click)="switchPage($index)">
+          Pág {{ $index + 1 }}
+          @if (pages.length > 1) {
+            <i class="bi bi-x" (click)="removePage($index, $event)" title="Eliminar página"></i>
+          }
+        </button>
+      }
+      <button type="button" class="btn btn-sm btn-outline-secondary" (click)="addPage()" title="Agregar página">
+        <i class="bi bi-plus-lg"></i> Página
+      </button>
+
+      <!-- Zoom controls -->
+      <div class="ms-auto d-flex align-items-center gap-1">
+        <button type="button" class="btn btn-sm btn-outline-secondary px-2"
+                (click)="changeZoom(zoom - 0.25)" [disabled]="zoom <= 0.25" title="Alejar">
+          <i class="bi bi-dash-lg"></i>
+        </button>
+        <span class="form-control form-control-sm text-center small user-select-none"
+              style="width:58px;cursor:default;"
+              title="Usá la rueda del mouse sobre el lienzo para hacer zoom">
+          {{ (zoom * 100) | number:'1.0-0' }}%
+        </span>
+        <button type="button" class="btn btn-sm btn-outline-secondary px-2"
+                (click)="changeZoom(zoom + 0.25)" [disabled]="zoom >= 3" title="Acercar">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+      </div>
+    </div>
+
+    <app-designer-canvas
+      [orientation]="orientacion"
+      [initialLayout]="initialLayout"
+      [zoom]="zoom"
+      (blockSelected)="onBlockSelected($event)"
+      (canvasChanged)="onCanvasChanged()"
+      (zoomChanged)="changeZoom($event)"
+      (blockDblClicked)="openBlockEditor($event)">
+    </app-designer-canvas>
+  </div>
+
+  <!-- Properties -->
+  <div class="border-start bg-body" style="width:220px; overflow-y:auto; flex-shrink:0;">
+    <div class="px-2 py-2 border-bottom">
+      <span class="small fw-semibold text-muted text-uppercase">Propiedades</span>
+    </div>
+    <app-properties-panel
+      [block]="selectedBlock"
+      [activePageIndex]="activePageIndex"
+      (changed)="onBlockChanged($event)"
+      (deleted)="onDeleteSelected()">
+    </app-properties-panel>
+  </div>
+
+</div>
+
+<!-- Norma picker flotante — position:fixed evita recortes de overflow -->
+@if (normaPickerOpen) {
+  <div style="position:fixed;inset:0;z-index:1039;"
+       (click)="normaPickerOpen=false; cdr.markForCheck()"></div>
+
+  <div class="bg-body border rounded shadow overflow-y-auto"
+       style="position:fixed;z-index:1040;min-width:300px;max-height:380px;
+              top:{{ normaPickerPos.top }}px; left:{{ normaPickerPos.left }}px;">
+
+    <!-- Header -->
+    <div class="px-3 py-2 border-bottom d-flex align-items-center justify-content-between bg-body-secondary">
+      <span class="small fw-bold text-body" style="font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;">
+        <i class="bi bi-journal-code me-1 text-primary"></i>Normas del layout
+      </span>
+      <button class="btn-close btn-close-sm" style="font-size:.6rem;"
+              (click)="normaPickerOpen=false; cdr.markForCheck()"></button>
+    </div>
+
+    @if (allNormas.length === 0) {
+      <div class="px-3 py-3 text-body-secondary small d-flex align-items-center gap-2">
+        <span class="spinner-border spinner-border-sm"></span> Cargando normas...
+      </div>
+    }
+
+    <!-- Lista de normas -->
+    <div class="py-1">
+      @for (norma of allNormas; track norma.id) {
+        <div class="d-flex align-items-center gap-2 px-3 py-2"
+             [style.background]="selectedNormaIds.has(norma.id)
+               ? 'var(--bs-primary-bg-subtle)' : 'transparent'"
+             style="cursor:pointer;transition:background .1s;"
+             (mouseenter)="$any($event.currentTarget).style.background = selectedNormaIds.has(norma.id) ? 'var(--bs-primary-bg-subtle)' : 'var(--bs-secondary-bg)'"
+             (mouseleave)="$any($event.currentTarget).style.background = selectedNormaIds.has(norma.id) ? 'var(--bs-primary-bg-subtle)' : 'transparent'"
+             (click)="toggleNorma(norma.id); $event.stopPropagation()">
+
+          <input class="form-check-input flex-shrink-0 mt-0" type="checkbox"
+                 [id]="'np'+norma.id"
+                 [checked]="selectedNormaIds.has(norma.id)"
+                 (change)="$event.stopPropagation()">
+
+          <label class="form-check-label small flex-grow-1"
+                 [for]="'np'+norma.id"
+                 style="cursor:pointer;user-select:none;"
+                 [class.fw-semibold]="selectedNormaIds.has(norma.id)"
+                 [class.text-primary-emphasis]="selectedNormaIds.has(norma.id)"
+                 [class.text-body]="!selectedNormaIds.has(norma.id)">
+            {{ norma.nombre }}
+          </label>
+
+          @if (selectedNormaIds.has(norma.id)) {
+            <i class="bi bi-check-circle-fill text-primary flex-shrink-0" style="font-size:.8rem;"></i>
+          }
+        </div>
+      }
+    </div>
+
+    <!-- Footer -->
+    @if (selectedNormaIds.size > 0) {
+      <div class="px-3 py-2 border-top bg-body-secondary d-flex align-items-center gap-2">
+        <i class="bi bi-info-circle text-primary" style="font-size:.75rem;"></i>
+        <span class="small text-body-secondary">
+          {{ selectedNormaIds.size }} norma{{ selectedNormaIds.size !== 1 ? 's' : '' }} seleccionada{{ selectedNormaIds.size !== 1 ? 's' : '' }}
+        </span>
+      </div>
+    }
+  </div>
+}
+
+<!-- PDF Preview modal -->
+@if (previewPdf) {
+  <div class="modal d-block" tabindex="-1" style="background:rgba(0,0,0,.7);">
+    <div class="modal-dialog modal-xl modal-dialog-centered" style="max-width:900px;">
+      <div class="modal-content" style="height:85vh;">
+        <div class="modal-header py-2">
+          <h6 class="modal-title mb-0">Vista previa — {{ nombre }}</h6>
+          <button type="button" class="btn-close" (click)="closePreview()"></button>
+        </div>
+        <div class="modal-body p-0 flex-grow-1" style="overflow:hidden;">
+          <iframe [src]="previewPdf" style="width:100%;height:100%;border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+}

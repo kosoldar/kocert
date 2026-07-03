@@ -1,0 +1,160 @@
+@if (!layout) {
+  <div class="d-flex align-items-center justify-content-center" style="height:100vh;">
+    <span class="spinner-border me-2"></span>
+  </div>
+}
+@if (layout && block) {
+<div class="d-flex flex-column" style="height:100vh;">
+
+  <div class="d-flex align-items-center gap-2 px-3 py-2 border-bottom bg-body-tertiary">
+    <button class="btn btn-sm btn-outline-secondary" (click)="goBack()"><i class="bi bi-arrow-left me-1"></i>Volver</button>
+    <span class="vr"></span>
+    <span class="fw-semibold small"><i class="bi bi-table me-1 text-warning"></i>Variables de soldadura</span>
+    <div class="ms-auto">
+      <button class="btn btn-sm btn-primary" (click)="save()" [disabled]="saving">
+        @if (saving) { <span class="spinner-border spinner-border-sm me-1"></span> } @else { <i class="bi bi-floppy me-1"></i> }
+        Guardar y volver
+      </button>
+    </div>
+  </div>
+
+  <div class="d-flex flex-grow-1 overflow-hidden">
+
+    <!-- Config -->
+    <div class="border-end overflow-y-auto p-3" style="width:350px;flex-shrink:0;">
+
+      <p class="small fw-semibold text-muted text-uppercase mb-2">Filas — orden y visibilidad</p>
+      <div class="d-flex flex-column gap-1 mb-3">
+        @for (row of rowDefs; track row.key) {
+          <div class="d-flex align-items-center gap-1 px-2 py-1 rounded border"
+               [class.opacity-50]="isHidden(row.key)" style="font-size:.78rem;">
+            <div class="form-check mb-0 flex-grow-1">
+              <input class="form-check-input" type="checkbox" [id]="'r'+row.key"
+                     [checked]="!isHidden(row.key)" (change)="toggleRow(row.key)">
+              <label class="form-check-label" [for]="'r'+row.key">{{ row.label }}</label>
+            </div>
+            <button class="btn btn-sm btn-link p-0 text-muted" (click)="moveRow(row.key, -1)"><i class="bi bi-chevron-up"></i></button>
+            <button class="btn btn-sm btn-link p-0 text-muted" (click)="moveRow(row.key, 1)"><i class="bi bi-chevron-down"></i></button>
+          </div>
+        }
+      </div>
+
+      <p class="small fw-semibold text-muted text-uppercase mb-2">Columnas</p>
+      <div class="d-flex flex-column gap-1 mb-3">
+        <div class="form-check form-switch mb-0">
+          <input class="form-check-input" type="checkbox" id="showRange"
+                 [checked]="cfg['showRange'] !== false" (change)="setConfig('showRange', $any($event.target).checked)">
+          <label class="form-check-label small" for="showRange">Rango Calificado</label>
+        </div>
+        <div class="form-check form-switch mb-0">
+          <input class="form-check-input" type="checkbox" id="showComments"
+                 [checked]="cfg['showComments'] !== false" (change)="setConfig('showComments', $any($event.target).checked)">
+          <label class="form-check-label small" for="showComments">Comentarios</label>
+        </div>
+      </div>
+
+      <p class="small fw-semibold text-muted text-uppercase mb-2">Tipografía y colores</p>
+      <div class="row g-2 mb-2">
+        <div class="col-6">
+          <label class="form-label small mb-1">Tamaño datos (pt)</label>
+          <input type="number" class="form-control form-control-sm" min="5" max="14"
+                 [value]="cfg['fontSize'] ?? 7" (change)="setConfig('fontSize', +$any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Tamaño cabecera (pt)</label>
+          <input type="number" class="form-control form-control-sm" min="5" max="14"
+                 [value]="cfg['headerFontSize'] ?? cfg['fontSize'] ?? 7"
+                 (change)="setConfig('headerFontSize', +$any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Peso etiquetas</label>
+          <select class="form-select form-select-sm" [value]="cfg['labelFontWeight'] ?? 'bold'"
+                  (change)="setConfig('labelFontWeight', $any($event.target).value)">
+            <option value="bold">Negrita</option>
+            <option value="normal">Normal</option>
+          </select>
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Color etiquetas</label>
+          <input type="color" class="form-control form-control-sm form-control-color"
+                 [value]="cfg['labelColor'] || '#000000'"
+                 (input)="setConfig('labelColor', $any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Color valores</label>
+          <input type="color" class="form-control form-control-sm form-control-color"
+                 [value]="cfg['valueColor'] || '#000000'"
+                 (input)="setConfig('valueColor', $any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Color texto cabecera</label>
+          <input type="color" class="form-control form-control-sm form-control-color"
+                 [value]="cfg['headerColor'] || '#000000'"
+                 (input)="setConfig('headerColor', $any($event.target).value)">
+        </div>
+      </div>
+
+      <p class="small fw-semibold text-muted text-uppercase mb-2">Fondos y bordes</p>
+      <div class="row g-2 mb-2">
+        <div class="col-6">
+          <label class="form-label small mb-1">Fondo cabecera</label>
+          <input type="color" class="form-control form-control-sm form-control-color"
+                 [value]="cfg['headerBg'] || '#ffffff'"
+                 (input)="setConfig('headerBg', $any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Fondo filas</label>
+          <input type="color" class="form-control form-control-sm form-control-color"
+                 [value]="cfg['rowBg'] || '#ffffff'"
+                 (input)="setConfig('rowBg', $any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Fondo alterno</label>
+          <input type="color" class="form-control form-control-sm form-control-color"
+                 [value]="cfg['altRowBg'] || '#f8f8f8'"
+                 (input)="setConfig('altRowBg', $any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Color bordes</label>
+          <div class="d-flex gap-1 align-items-center">
+            <input type="color" class="form-control form-control-sm form-control-color flex-grow-1"
+                   [value]="cfg['borderColor'] === 'transparent' ? '#000000' : (cfg['borderColor'] || '#000000')"
+                   [disabled]="cfg['borderColor'] === 'transparent'"
+                   (input)="setConfig('borderColor', $any($event.target).value)">
+            <div class="form-check mb-0" style="white-space:nowrap;">
+              <input class="form-check-input" type="checkbox" id="noBorder"
+                     [checked]="cfg['borderColor'] === 'transparent'"
+                     (change)="setConfig('borderColor', $any($event.target).checked ? 'transparent' : '#000000')">
+              <label class="form-check-label small" for="noBorder">Sin borde</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Padding H (mm)</label>
+          <input type="number" class="form-control form-control-sm" min="0" max="5" step="0.5"
+                 [value]="cfg['cellPaddingH'] ?? 1" (change)="setConfig('cellPaddingH', +$any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Padding V (mm)</label>
+          <input type="number" class="form-control form-control-sm" min="0" max="5" step="0.5"
+                 [value]="cfg['cellPaddingV'] ?? 0.5" (change)="setConfig('cellPaddingV', +$any($event.target).value)">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Preview -->
+    <div class="flex-grow-1 p-4 overflow-auto d-flex flex-column gap-3 bg-light">
+      <div class="d-flex align-items-center gap-2">
+        <span class="small fw-semibold text-muted text-uppercase">Preview con datos reales</span>
+        @if (previewLoading) { <span class="spinner-border spinner-border-sm text-primary" style="width:12px;height:12px;"></span> }
+      </div>
+      @if (previewError) { <div class="alert alert-warning small py-2">Sin certificados para mostrar preview.</div> }
+      @if (!previewError) {
+        <div class="border rounded p-3 bg-white overflow-auto flex-grow-1" style="font-size:11px;" [innerHTML]="previewHtml"></div>
+      }
+    </div>
+
+  </div>
+</div>
+}

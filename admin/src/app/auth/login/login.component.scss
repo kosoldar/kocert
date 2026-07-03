@@ -1,0 +1,24 @@
+.login-wrap {
+  background: linear-gradient(135deg, var(--ko-primary) 0%, #0d2540 100%);
+}
+
+.login-card {
+  border-radius: 12px;
+  border: none;
+}
+
+.brand-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background-color: var(--ko-primary);
+  margin: 0 auto;
+
+  .brand-icon {
+    font-size: 1.75rem;
+    filter: brightness(0) invert(1);
+  }
+}

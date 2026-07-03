@@ -1,0 +1,31 @@
+@if (!layout) { <div class="d-flex align-items-center justify-content-center" style="height:100vh;"><span class="spinner-border me-2"></span></div> }
+@if (layout && block) {
+<div class="d-flex flex-column" style="height:100vh;">
+  <div class="d-flex align-items-center gap-2 px-3 py-2 border-bottom bg-body-tertiary">
+    <button class="btn btn-sm btn-outline-secondary" (click)="goBack()"><i class="bi bi-arrow-left me-1"></i>Volver</button>
+    <span class="vr"></span>
+    <span class="fw-semibold small"><i class="bi bi-bezier2 me-1 text-purple"></i>Diseño de junta</span>
+  </div>
+
+  <div class="d-flex flex-grow-1 overflow-hidden">
+    <div class="border-end overflow-y-auto p-3" style="width:280px;flex-shrink:0;">
+      <div class="alert alert-info py-2 px-3 small mb-0">
+        <i class="bi bi-info-circle me-1"></i>
+        El diseño de junta que aparece en el certificado depende del campo
+        <code>joint_design_id</code> del certificado. Para cambiar el diagrama,
+        modificá ese campo en el formulario del certificado.<br><br>
+        Este bloque no tiene configuración propia — el contenido es 100% dinámico.
+      </div>
+    </div>
+
+    <div class="flex-grow-1 p-4 overflow-auto d-flex flex-column gap-3 bg-light">
+      <div class="d-flex align-items-center gap-2">
+        <span class="small fw-semibold text-muted text-uppercase">Preview con datos reales</span>
+        @if (previewLoading) { <span class="spinner-border spinner-border-sm text-primary" style="width:12px;height:12px;"></span> }
+      </div>
+      @if (previewError) { <div class="alert alert-warning small py-2">Sin certificados con diseño de junta para mostrar preview.</div> }
+      @if (!previewError) { <div class="border rounded p-3 bg-white overflow-auto flex-grow-1" style="font-size:11px;" [innerHTML]="previewHtml"></div> }
+    </div>
+  </div>
+</div>
+}

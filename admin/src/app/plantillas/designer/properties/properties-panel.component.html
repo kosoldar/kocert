@@ -1,0 +1,297 @@
+@if (!draft) {
+  <div class="p-3 text-center text-muted small">
+    <i class="bi bi-cursor d-block fs-3 opacity-25 mb-2"></i>
+    Seleccioná un bloque para ver propiedades
+  </div>
+}
+
+@if (draft) {
+  <div class="p-2 d-flex flex-column gap-3">
+
+    <!-- Type badge + delete -->
+    <div class="d-flex align-items-center justify-content-between">
+      <span class="badge bg-secondary-subtle text-secondary-emphasis border small">
+        {{ typeLabel(draft.type) }}
+      </span>
+      <button class="btn btn-sm btn-outline-danger py-0 px-2"
+              (click)="deleted.emit()" title="Eliminar bloque">
+        <i class="bi bi-trash"></i>
+      </button>
+    </div>
+
+    <!-- Position & size -->
+    <fieldset class="border rounded p-2">
+      <legend class="float-none w-auto px-1 small fw-semibold text-muted mb-0" style="font-size:.7rem;">
+        Posición y tamaño (mm)
+      </legend>
+      <div class="row g-2 mt-0">
+        <div class="col-6">
+          <label class="form-label small mb-1">X</label>
+          <input type="number" class="form-control form-control-sm" step="0.5"
+                 [value]="draft.x" (change)="setField('x', +$any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Y</label>
+          <input type="number" class="form-control form-control-sm" step="0.5"
+                 [value]="draft.y" (change)="setField('y', +$any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Ancho</label>
+          <input type="number" class="form-control form-control-sm" step="0.5"
+                 [value]="draft.width" (change)="setField('width', +$any($event.target).value)">
+        </div>
+        <div class="col-6">
+          <label class="form-label small mb-1">Alto</label>
+          <input type="number" class="form-control form-control-sm" step="0.5"
+                 [value]="draft.height" (change)="setField('height', +$any($event.target).value)">
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Field-type specific -->
+    @if (draft.type === 'field') {
+      <div>
+        <label class="form-label small mb-1 fw-semibold">Campo</label>
+        <select class="form-select form-select-sm"
+                [value]="draft.fieldKey" (change)="setField('fieldKey', $any($event.target).value)">
+          @for (grp of fieldGroups; track grp) {
+            <optgroup [label]="grp">
+              @for (fk of fieldKeys; track fk.key) {
+                @if (fk.group === grp) {
+                  <option [value]="fk.key">{{ fk.label }}</option>
+                }
+              }
+            </optgroup>
+          }
+        </select>
+      </div>
+    }
+
+    @if (draft.type === 'text') {
+      <div>
+        <label class="form-label small mb-1 fw-semibold">Contenido</label>
+        <textarea class="form-control form-control-sm" rows="3"
+                  [value]="draft.content ?? ''"
+                  (input)="setField('content', $any($event.target).value)"></textarea>
+        <div class="text-muted" style="font-size:.7rem;">
+          Usá <code>{{ '{' }}{{ '{' }}cert.codigo{{ '}' }}{{ '}' }}</code> para insertar valores.
+        </div>
+      </div>
+    }
+
+    @if (draft.type === 'image') {
+      <div>
+        <label class="form-label small mb-1 fw-semibold">Tipo de imagen</label>
+        <select class="form-select form-select-sm"
+                [value]="draft.imageType" (change)="setField('imageType', $any($event.target).value)">
+          @for (it of imageTypes; track it.value) {
+            <option [value]="it.value">{{ it.label }}</option>
+          }
+        </select>
+      </div>
+    }
+
+    @if (draft.type === 'line') {
+      <div>
+        <label class="form-label small mb-1 fw-semibold">Dirección</label>
+        <select class="form-select form-select-sm"
+                [value]="draft.direction ?? 'horizontal'"
+                (change)="setField('direction', $any($event.target).value)">
+          <option value="horizontal">Horizontal</option>
+          <option value="vertical">Vertical</option>
+        </select>
+      </div>
+    }
+
+    <!-- Shared toggle (solo en página 1) -->
+    @if (activePageIndex === 0) {
+      <div class="form-check form-switch mb-0">
+        <input class="form-check-input" type="checkbox" id="cfgShared"
+               [checked]="draft.shared === true"
+               (change)="setField('shared', $any($event.target).checked || undefined)">
+        <label class="form-check-label small" for="cfgShared">
+          Repetir en todas las páginas
+        </label>
+      </div>
+    }
+    @if (activePageIndex > 0 && draft.shared) {
+      <div class="alert alert-warning py-1 px-2 mb-0" style="font-size:.7rem;">
+        <i class="bi bi-lock me-1"></i>Bloque compartido — editá desde página 1.
+      </div>
+    }
+
+    <!-- Style (only for non-dynamic) -->
+    @if (!isDynamic(draft.type)) {
+      <fieldset class="border rounded p-2">
+        <legend class="float-none w-auto px-1 small fw-semibold text-muted mb-0" style="font-size:.7rem;">
+          Estilo
+        </legend>
+        <div class="row g-2 mt-0">
+
+          @if (draft.type !== 'line' && draft.type !== 'image') {
+            <div class="col-6">
+              <label class="form-label small mb-1">Tamaño fuente (pt)</label>
+              <input type="number" class="form-control form-control-sm" min="5" max="48"
+                     [value]="s.fontSize ?? 10"
+                     (change)="setStyle('fontSize', +$any($event.target).value)">
+            </div>
+            <div class="col-6">
+              <label class="form-label small mb-1">Peso</label>
+              <select class="form-select form-select-sm"
+                      [value]="s.fontWeight ?? 'normal'"
+                      (change)="setStyle('fontWeight', $any($event.target).value)">
+                <option value="normal">Normal</option>
+                <option value="bold">Negrita</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label class="form-label small mb-1">Alineación</label>
+              <select class="form-select form-select-sm"
+                      [value]="s.textAlign ?? 'left'"
+                      (change)="setStyle('textAlign', $any($event.target).value)">
+                <option value="left">Izquierda</option>
+                <option value="center">Centro</option>
+                <option value="right">Derecha</option>
+              </select>
+            </div>
+          }
+
+          <div class="col-6">
+            <label class="form-label small mb-1">Color</label>
+            <input type="color" class="form-control form-control-sm form-control-color"
+                   [value]="s.color ?? '#000000'"
+                   (input)="setStyle('color', $any($event.target).value)">
+          </div>
+
+          @if (draft.type !== 'line') {
+            <div class="col-6">
+              <label class="form-label small mb-1">Fondo</label>
+              <input type="color" class="form-control form-control-sm form-control-color"
+                     [value]="s.backgroundColor ?? '#ffffff'"
+                     (input)="setStyle('backgroundColor', $any($event.target).value)">
+            </div>
+            <div class="col-6">
+              <label class="form-label small mb-1">Borde (px)</label>
+              <input type="number" class="form-control form-control-sm" min="0" max="5"
+                     [value]="s.borderWidth ?? 0"
+                     (change)="setStyle('borderWidth', +$any($event.target).value)">
+            </div>
+          }
+
+        </div>
+      </fieldset>
+    }
+
+    <!-- ── Config: variables_block ─────────────────────────────── -->
+    @if (draft.type === 'variables_block') {
+      <fieldset class="border rounded p-2">
+        <legend class="float-none w-auto px-1 small fw-semibold text-muted mb-0" style="font-size:.7rem;">
+          Configuración de tabla
+        </legend>
+        <div class="d-flex flex-column gap-2 mt-1">
+
+          <div class="form-check form-switch mb-0">
+            <input class="form-check-input" type="checkbox" id="cfgShowRange"
+                   [checked]="cfg['showRange'] !== false"
+                   (change)="setConfig('showRange', $any($event.target).checked)">
+            <label class="form-check-label small" for="cfgShowRange">Columna Rango Calificado</label>
+          </div>
+
+          <div class="form-check form-switch mb-0">
+            <input class="form-check-input" type="checkbox" id="cfgShowComments"
+                   [checked]="cfg['showComments'] !== false"
+                   (change)="setConfig('showComments', $any($event.target).checked)">
+            <label class="form-check-label small" for="cfgShowComments">Columna Comentarios</label>
+          </div>
+
+          <div class="row g-2">
+            <div class="col-6">
+              <label class="form-label small mb-1">Fuente (pt)</label>
+              <input type="number" class="form-control form-control-sm" min="5" max="12"
+                     [value]="cfg['fontSize'] ?? 7"
+                     (change)="setConfig('fontSize', +$any($event.target).value)">
+            </div>
+            <div class="col-6">
+              <label class="form-label small mb-1">Fondo cabecera</label>
+              <input type="color" class="form-control form-control-sm form-control-color"
+                     [value]="cfg['headerBg'] || '#ffffff'"
+                     (input)="setConfig('headerBg', $any($event.target).value)">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    }
+
+    <!-- ── Config: results_block ────────────────────────────────── -->
+    @if (draft.type === 'results_block') {
+      <fieldset class="border rounded p-2">
+        <legend class="float-none w-auto px-1 small fw-semibold text-muted mb-0" style="font-size:.7rem;">
+          Configuración de resultados
+        </legend>
+        <div class="d-flex flex-column gap-2 mt-1">
+
+          <div>
+            <label class="form-label small mb-1">Disposición</label>
+            <select class="form-select form-select-sm"
+                    [value]="cfg['layout'] ?? 'horizontal'"
+                    (change)="setConfig('layout', $any($event.target).value)">
+              <option value="horizontal">Horizontal (checkboxes en fila)</option>
+              <option value="vertical">Vertical (una fila por ensayo)</option>
+            </select>
+          </div>
+
+          <div class="form-check form-switch mb-0">
+            <input class="form-check-input" type="checkbox" id="cfgShowResultText"
+                   [checked]="cfg['showResultText'] === true"
+                   (change)="setConfig('showResultText', $any($event.target).checked)">
+            <label class="form-check-label small" for="cfgShowResultText">Mostrar texto resultado</label>
+          </div>
+
+        </div>
+      </fieldset>
+    }
+
+    <!-- ── Config: passes_block ─────────────────────────────────── -->
+    @if (draft.type === 'passes_block') {
+      <fieldset class="border rounded p-2">
+        <legend class="float-none w-auto px-1 small fw-semibold text-muted mb-0" style="font-size:.7rem;">
+          Configuración de pasadas
+        </legend>
+        <div class="d-flex flex-column gap-2 mt-1">
+
+          <div>
+            <label class="form-label small mb-1">Fuente (pt)</label>
+            <input type="number" class="form-control form-control-sm" min="5" max="10"
+                   [value]="cfg['fontSize'] ?? 7"
+                   (change)="setConfig('fontSize', +$any($event.target).value)">
+          </div>
+
+          <div>
+            <label class="form-label small mb-1">Columnas visibles</label>
+            <div class="d-flex flex-wrap gap-1">
+              @for (col of passesColumns; track col.key) {
+                <div class="form-check mb-0" style="min-width:48%;">
+                  <input class="form-check-input" type="checkbox"
+                         [id]="'col-' + col.key"
+                         [checked]="isPassesColumnActive(col.key)"
+                         (change)="togglePassesColumn(col.key)">
+                  <label class="form-check-label small" [for]="'col-' + col.key">{{ col.label }}</label>
+                </div>
+              }
+            </div>
+          </div>
+
+        </div>
+      </fieldset>
+    }
+
+    <!-- Hint para joint_design_block (no configurable) -->
+    @if (draft.type === 'joint_design_block') {
+      <div class="alert alert-info py-2 px-3 mb-0" style="font-size:.75rem;">
+        <i class="bi bi-info-circle me-1"></i>
+        El diseño de junta lo determina el campo <code>joint_design_id</code> del certificado.
+      </div>
+    }
+
+  </div>
+}

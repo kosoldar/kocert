@@ -1,0 +1,108 @@
+
+> admin@0.0.0 start
+> ng serve
+
+[33m>[39m Building...
+[32m√[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m       [2m | [22m[36m273.63 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m  [36m8.01 kB[39m[2m | [22m
+[32mchunk-OOCVY2PR.js[39m  [2m | [22m[2m-[22m            [2m | [22m  [36m2.88 kB[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m[2m | [22m[1m284.52 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m [1mRaw size[22m
+[32mchunk-WWLVQ6LA.js[39m  [2m | [22m[2mauth-module[22m  [2m | [22m [36m16.41 kB[39m[2m | [22m
+
+Application bundle generation complete. [1.774 seconds] - 2026-06-19T00:38:23.771Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m [36m8.01 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mchunk-HOOYH3PB.js[39m  [2m | [22m[2mauth-module[22m[2m | [22m[36m16.43 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.283 seconds] - 2026-06-19T00:41:27.793Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.631 seconds] - 2026-06-19T00:46:33.596Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../environments/environment' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/dashboard/dashboard.component.ts:3:28:
+[37m      3 │ import { environment } from [32m'../../../environments/environment'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../environments/environment"[0m
+
+    src/app/dashboard/dashboard.component.ts:2:28:
+[37m      2 │ import { environment } from [32m'../../../environments/environment'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.162 seconds] - 2026-06-19T00:46:38.491Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../environments/environment' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/dashboard/dashboard.component.ts:3:28:
+[37m      3 │ import { environment } from [32m'../../../environments/environment'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../environments/environment"[0m
+
+    src/app/dashboard/dashboard.component.ts:2:28:
+[37m      2 │ import { environment } from [32m'../../../environments/environment'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.073 seconds] - 2026-06-19T00:46:43.614Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module '../../../environments/environment' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/dashboard/dashboard.component.ts:3:28:
+[37m      3 │ import { environment } from [32m'../../../environments/environment'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../../environments/environment"[0m
+
+    src/app/dashboard/dashboard.component.ts:2:28:
+[37m      2 │ import { environment } from [32m'../../../environments/environment'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m             [2m | [22m[36m273.63 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m               [2m | [22m  [36m7.93 kB[39m[2m | [22m
+[32mchunk-RQMXV23M.js[39m  [2m | [22m[2m-[22m                  [2m | [22m  [36m2.65 kB[39m[2m | [22m
+[32mchunk-PZ5AY32C.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m234 bytes[39m[2m | [22m
+[32mchunk-HXJGBCK5.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m187 bytes[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m      [2m | [22m[1m284.64 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mchunk-IG4LHRMG.js[39m  [2m | [22m[2mlayout-module[22m      [2m | [22m [36m18.96 kB[39m[2m | [22m
+[32mchunk-7T7SSSL6.js[39m  [2m | [22m[2mdashboard-module[22m   [2m | [22m [36m17.88 kB[39m[2m | [22m
+[32mchunk-TOWAWOI6.js[39m  [2m | [22m[2mauth-module[22m        [2m | [22m [36m16.49 kB[39m[2m | [22m
+[32mchunk-M3NAAF5N.js[39m  [2m | [22m[2mcertificados-module[22m[2m | [22m  [36m1.14 kB[39m[2m | [22m
+[32mchunk-V2Q7BMYJ.js[39m  [2m | [22m[2msoldadores-module[22m  [2m | [22m  [36m1.12 kB[39m[2m | [22m
+[32mchunk-DXOOQB2Z.js[39m  [2m | [22m[2mempresas-module[22m    [2m | [22m  [36m1.10 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.223 seconds] - 2026-06-19T00:47:01.867Z
+
+Page reload sent to client(s).

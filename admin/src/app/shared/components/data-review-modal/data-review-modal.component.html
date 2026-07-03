@@ -1,0 +1,72 @@
+<div class="review-overlay" (click)="onOverlayClick($event)">
+  <div class="review-dialog">
+
+    <!-- Header -->
+    <div class="p-4 border-bottom d-flex align-items-start justify-content-between gap-3 flex-shrink-0">
+      <div>
+        <h5 class="fw-bold mb-1">{{ title }}</h5>
+        <p class="text-muted small mb-0">
+          {{ step === 'review' ? 'Revisá los datos antes de guardar' : 'Confirmá la operación' }}
+        </p>
+      </div>
+      <button type="button" class="btn-close flex-shrink-0 mt-1" (click)="cancel()"></button>
+    </div>
+
+    <!-- Step indicator -->
+    <div class="px-4 pt-3 pb-3 d-flex align-items-center gap-0 flex-shrink-0">
+      <span class="step-num" [class.active]="step === 'review'" [class.done]="step === 'confirm'">1</span>
+      <span class="small ms-2 fw-semibold" [class.text-muted]="step === 'confirm'">Revisión</span>
+      <div class="step-connector mx-2" [class.active]="step === 'confirm'"></div>
+      <span class="step-num" [class.active]="step === 'confirm'">2</span>
+      <span class="small ms-2 fw-semibold" [class.text-muted]="step === 'review'">Confirmación</span>
+    </div>
+
+    <!-- Step 1: Review fields -->
+    <div *ngIf="step === 'review'" class="review-body px-4 pb-3">
+      <div *ngFor="let field of fields" class="field-row py-2 d-flex justify-content-between align-items-baseline gap-3">
+        <span class="text-muted small flex-shrink-0" style="min-width:110px">{{ field.label }}</span>
+        <span class="small fw-semibold text-end" style="word-break:break-word">
+          {{ (field.value !== null && field.value !== undefined && field.value !== '') ? field.value : '—' }}
+        </span>
+      </div>
+    </div>
+
+    <!-- Step 2: Confirm -->
+    <div *ngIf="step === 'confirm'" class="review-body px-4 py-5 text-center d-flex flex-column align-items-center justify-content-center">
+      <div class="rounded-circle bg-success bg-opacity-10 d-flex align-items-center justify-content-center mb-3"
+           style="width:64px;height:64px">
+        <i class="bi bi-shield-check fs-3 text-success"></i>
+      </div>
+      <p class="mb-1 fw-semibold">¿Confirmás la operación?</p>
+      <p class="text-muted small mb-0">
+        Se va a <strong class="text-body">{{ actionLabel }}</strong> el registro con los datos revisados.
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="px-4 py-3 border-top d-flex justify-content-between align-items-center gap-2 flex-shrink-0">
+
+      <button *ngIf="step === 'review'" type="button"
+              class="btn btn-secondary btn-sm px-3" (click)="cancel()">
+        Cancelar
+      </button>
+      <button *ngIf="step === 'confirm'" type="button"
+              class="btn btn-secondary btn-sm px-3" (click)="back()">
+        <i class="bi bi-arrow-left me-1"></i>Volver
+      </button>
+
+      <div class="ms-auto">
+        <button *ngIf="step === 'review'" type="button"
+                class="btn btn-primary btn-sm px-4 fw-semibold" (click)="next()">
+          Continuar <i class="bi bi-arrow-right ms-1"></i>
+        </button>
+        <button *ngIf="step === 'confirm'" type="button"
+                class="btn btn-success btn-sm px-4 fw-semibold" (click)="confirm()">
+          <i class="bi bi-check-lg me-1"></i>Sí, {{ actionLabel }}
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>

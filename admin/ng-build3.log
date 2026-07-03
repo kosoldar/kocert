@@ -1,0 +1,2110 @@
+
+> admin@0.0.0 start
+> ng serve
+
+[33m>[39m Building...
+[32m√[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m             [2m | [22m[36m273.63 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m               [2m | [22m  [36m7.93 kB[39m[2m | [22m
+[32mchunk-RUZELKZF.js[39m  [2m | [22m[2m-[22m                  [2m | [22m  [36m2.66 kB[39m[2m | [22m
+[32mchunk-PZ5AY32C.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m234 bytes[39m[2m | [22m
+[32mchunk-HXJGBCK5.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m187 bytes[39m[2m | [22m
+[32mpolyfills.js[39m       [2m | [22m[2mpolyfills[22m          [2m | [22m [36m95 bytes[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m      [2m | [22m[1m284.74 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mchunk-2MXAKS7W.js[39m  [2m | [22m[2mlayout-module[22m      [2m | [22m [36m18.96 kB[39m[2m | [22m
+[32mchunk-7T7SSSL6.js[39m  [2m | [22m[2mdashboard-module[22m   [2m | [22m [36m17.88 kB[39m[2m | [22m
+[32mchunk-UCZ4HWZQ.js[39m  [2m | [22m[2mauth-module[22m        [2m | [22m [36m16.49 kB[39m[2m | [22m
+[32mchunk-M3NAAF5N.js[39m  [2m | [22m[2mcertificados-module[22m[2m | [22m  [36m1.14 kB[39m[2m | [22m
+[32mchunk-V2Q7BMYJ.js[39m  [2m | [22m[2msoldadores-module[22m  [2m | [22m  [36m1.12 kB[39m[2m | [22m
+[32mchunk-DXOOQB2Z.js[39m  [2m | [22m[2mempresas-module[22m    [2m | [22m  [36m1.10 kB[39m[2m | [22m
+
+Application bundle generation complete. [2.194 seconds] - 2026-06-19T01:10:01.967Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+[2m10:10:02[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because lockfile has changed
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.608 seconds] - 2026-06-19T04:52:07.833Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'Math' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:94:37:
+[37m      94 │ ...Página {{ currentPage }} de {{[32m Mat[37mh.ceil(totalItems / perPage) }}
+         ╵                                  [32m~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m             [2m | [22m[36m273.63 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m               [2m | [22m  [36m7.93 kB[39m[2m | [22m
+[32mchunk-RUZELKZF.js[39m  [2m | [22m[2m-[22m                  [2m | [22m  [36m2.66 kB[39m[2m | [22m
+[32mchunk-PZ5AY32C.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m234 bytes[39m[2m | [22m
+[32mchunk-HXJGBCK5.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m187 bytes[39m[2m | [22m
+[32mpolyfills.js[39m       [2m | [22m[2mpolyfills[22m          [2m | [22m [36m95 bytes[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m      [2m | [22m[1m284.74 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mchunk-RRSAXNJA.js[39m  [2m | [22m[2msoldadores-module[22m  [2m | [22m [36m44.45 kB[39m[2m | [22m
+[32mchunk-IBXILAOD.js[39m  [2m | [22m[2mlayout-module[22m      [2m | [22m [36m18.96 kB[39m[2m | [22m
+[32mchunk-7T7SSSL6.js[39m  [2m | [22m[2mdashboard-module[22m   [2m | [22m [36m17.88 kB[39m[2m | [22m
+[32mchunk-UCZ4HWZQ.js[39m  [2m | [22m[2mauth-module[22m        [2m | [22m [36m16.49 kB[39m[2m | [22m
+[32mchunk-M3NAAF5N.js[39m  [2m | [22m[2mcertificados-module[22m[2m | [22m  [36m1.14 kB[39m[2m | [22m
+[32mchunk-DXOOQB2Z.js[39m  [2m | [22m[2mempresas-module[22m    [2m | [22m  [36m1.10 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.312 seconds] - 2026-06-19T04:52:16.490Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m[2m | [22m[36m274.86 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.886 seconds] - 2026-06-19T05:06:49.727Z
+
+Stylesheet update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-HPI4MEXF.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m19.77 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.283 seconds] - 2026-06-19T05:07:00.286Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-ZYPORX3G.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m23.07 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.204 seconds] - 2026-06-19T05:07:11.522Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-UH63MVL5.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m21.91 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.218 seconds] - 2026-06-19T05:07:24.208Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-PEUYIEPK.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m21.89 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.195 seconds] - 2026-06-19T05:07:40.814Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mchunk-EAMMFPYI.js[39m  [2m | [22m[2mlayout-module[22m   [2m | [22m[36m21.89 kB[39m[2m | [22m
+[32mchunk-FPUOZXW2.js[39m  [2m | [22m[2mdashboard-module[22m[2m | [22m[36m18.15 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.188 seconds] - 2026-06-19T05:07:57.031Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m       [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m      [2m | [22m[1mRaw size[22m
+[32mchunk-UUMQHPYC.js[39m  [2m | [22m[2mauth-module[22m[2m | [22m[36m15.73 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.176 seconds] - 2026-06-19T05:08:06.570Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.431 seconds] - 2026-06-19T05:08:43.317Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'totalItems' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:5:40:
+[37m      5 │ ...ass="text-muted mb-0 small">{{ [32mtotalItems[37m }} registros en total</p>
+        ╵                                   [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'openForm' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:7:43:
+[37m      7 │   <button class="btn btn-primary" (click)="[32mopenForm[37m()">
+        ╵                                            [32m~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'openForm' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:77:23:
+[37m      77 │               (click)="[32mopenForm[37m(s)"
+         ╵                        [32m~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'delete' does not exist on type 'SoldadoresListComponent'. Did you mean 'doDelete'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:82:23:
+[37m      82 │               (click)="[32mdelete[37m(s)"
+         ╵                        [32m~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'totalItems' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:92:14:
+[37m      92 │        *ngIf="[32mtotalItems[37m > 0">
+         ╵               [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'Math' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:94:37:
+[37m      94 │ ...Página {{ currentPage }} de {{[32m Mat[37mh.ceil(totalItems / perPage) }}
+         ╵                                  [32m~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'totalItems' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:94:47:
+[37m      94 │ ...Página {{ currentPage }} de {{ Math.ceil[32m(totalItem[37ms / perPage) }}
+         ╵                                            [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'totalItems' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:97:13:
+[37m      97 │       *ngIf="[32mtotalItems[37m > perPage"
+         ╵              [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'totalItems' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:98:24:
+[37m      98 │       [collectionSize]="[32mtotalItems[37m"
+         ╵                         [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'onPageChange' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:104:20:
+[37m      104 │       (pageChange)="[32monPageChange[37m($event)"
+          ╵                     [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'per_page' does not exist in type '{ search?: string | undefined; page?: number | undefined; activo?: boolean | undefined; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.ts:47:6:
+[37m      47 │       [32mper_page[37m: this.perPage,
+         ╵       [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.279 seconds] - 2026-06-19T05:08:58.546Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:22:56:
+[37m      22 │ ...rm-select-sm w-auto" [32m[(ngModel)]="perPage"[37m (ngModelChange)="onP...
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-pagination' is not a known element:
+1. If 'app-pagination' is an Angular component, then verify that it is part of this module.
+2. If 'app-pagination' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:8:
+[37m      100 │         [32m<app-pagination [meta]="meta" (pageChange)="onPage($event[37m...
+          ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'meta' since it isn't a known property of 'app-pagination'.
+1. If 'app-pagination' is an Angular component and it has 'meta' input, then verify that it is part of this module.
+2. If 'app-pagination' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:24:
+[37m      100 │         <app-pagination [32m[meta]="meta"[37m (pageChange)="onPage($event...
+          ╵                         [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type 'Event' is not assignable to parameter of type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:59:
+[37m      100 │ ...   <app-pagination [meta]="meta" (pageChange)="onPage([32m$event[37m)" />
+          ╵                                                          [32m~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:109:2:
+[37m      109 │   [32m<app-confirm-dialog[37m
+          ╵   [32m~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'message' since it isn't a known property of 'app-confirm-dialog'.
+1. If 'app-confirm-dialog' is an Angular component and it has 'message' input, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:111:4:
+[37m      111 │     [32m[message]="'¿Eliminás a ' + deleteTarget.nombre_completo + [37m...
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'per_page' does not exist in type '{ search?: string | undefined; page?: number | undefined; activo?: boolean | undefined; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.ts:47:6:
+[37m      47 │       [32mper_page[37m: this.perPage,
+         ╵       [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.204 seconds] - 2026-06-19T05:08:59.607Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:22:56:
+[37m      22 │ ...rm-select-sm w-auto" [32m[(ngModel)]="perPage"[37m (ngModelChange)="onP...
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-pagination' is not a known element:
+1. If 'app-pagination' is an Angular component, then verify that it is part of this module.
+2. If 'app-pagination' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:8:
+[37m      100 │         [32m<app-pagination [meta]="meta" (pageChange)="onPage($event[37m...
+          ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'meta' since it isn't a known property of 'app-pagination'.
+1. If 'app-pagination' is an Angular component and it has 'meta' input, then verify that it is part of this module.
+2. If 'app-pagination' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:24:
+[37m      100 │         <app-pagination [32m[meta]="meta"[37m (pageChange)="onPage($event...
+          ╵                         [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type 'Event' is not assignable to parameter of type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:59:
+[37m      100 │ ...   <app-pagination [meta]="meta" (pageChange)="onPage([32m$event[37m)" />
+          ╵                                                          [32m~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:109:2:
+[37m      109 │   [32m<app-confirm-dialog[37m
+          ╵   [32m~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'message' since it isn't a known property of 'app-confirm-dialog'.
+1. If 'app-confirm-dialog' is an Angular component and it has 'message' input, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:111:4:
+[37m      111 │     [32m[message]="'¿Eliminás a ' + deleteTarget.nombre_completo + [37m...
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'per_page' does not exist in type '{ search?: string | undefined; page?: number | undefined; activo?: boolean | undefined; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.ts:47:6:
+[37m      47 │       [32mper_page[37m: this.perPage,
+         ╵       [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.225 seconds] - 2026-06-19T05:09:06.874Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'activeModal' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:5:51:
+[37m      5 │ ...button" class="btn-close" (click)="[32mactiveModal[37m.dismiss()"></button>
+        ╵                                       [32m~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:9:14:
+[37m      9 │   <div *ngIf="[32merror[37m" class="alert alert-danger py-2 small mb-3">{{ ...
+        ╵               [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'error' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:9:67:
+[37m      9 │ ...error" class="alert alert-danger py-2 small mb-3">{{ [32merror[37m }}</div>
+        ╵                                                         [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:20:30:
+[37m      20 │           [class.is-invalid]="[32mfield[37m('apellido').invalid && field('...
+         ╵                               [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:20:59:
+[37m      20 │ ...valid]="field('apellido').invalid && [32mfield[37m('apellido').touched" />
+         ╵                                         [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:30:30:
+[37m      30 │           [class.is-invalid]="[32mfield[37m('nombre').invalid && field('no...
+         ╵                               [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:30:57:
+[37m      30 │ ...s-invalid]="field('nombre').invalid && [32mfield[37m('nombre').touched" />
+         ╵                                           [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:40:30:
+[37m      40 │           [class.is-invalid]="[32mfield[37m('dni').invalid && field('dni')...
+         ╵                               [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:40:54:
+[37m      40 │ ...lass.is-invalid]="field('dni').invalid && [32mfield[37m('dni').touched" />
+         ╵                                              [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:42:31:
+[37m      42 │           <ng-container *ngIf="[32mfield[37m('dni').errors?.['required']">...
+         ╵                                [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:43:31:
+[37m      43 │           <ng-container *ngIf="[32mfield[37m('dni').errors?.['taken']">DNI...
+         ╵                                [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:52:30:
+[37m      52 │           [class.is-invalid]="[32mfield[37m('cuño').invalid && field('cu�...
+         ╵                               [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:52:55:
+[37m      52 │ ....is-invalid]="field('cuño').invalid &&[32m fiel[37md('cuño').touched" />
+         ╵                                          [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:60:30:
+[37m      60 │           [class.is-invalid]="[32mfield[37m('ciudad').invalid && field('ci...
+         ╵                               [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:60:57:
+[37m      60 │ ...s-invalid]="field('ciudad').invalid && [32mfield[37m('ciudad').touched" />
+         ╵                                           [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:68:30:
+[37m      68 │           [class.is-invalid]="[32mfield[37m('telefono').invalid && field('...
+         ╵                               [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:68:59:
+[37m      68 │ ...valid]="field('telefono').invalid && [32mfield[37m('telefono').touched" />
+         ╵                                         [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:76:30:
+[37m      76 │           [class.is-invalid]="[32mfield[37m('email').invalid && field('ema...
+         ╵                               [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'field' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:76:56:
+[37m      76 │ ....is-invalid]="field('email').invalid && [32mfield[37m('email').touched" />
+         ╵                                            [32m~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'activeModal' does not exist on type 'SoldadorFormComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/form/soldador-form.component.html:94:59:
+[37m      94 │ ..."button" class="btn btn-secondary" (click)="[32mactiveModal[37m.dismiss()"
+         ╵                                                [32m~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadorFormComponent.
+
+    src/app/soldadores/form/soldador-form.component.ts:9:15:
+[37m      9 │   templateUrl: [32m'./soldador-form.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:22:56:
+[37m      22 │ ...rm-select-sm w-auto" [32m[(ngModel)]="perPage"[37m (ngModelChange)="onP...
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-pagination' is not a known element:
+1. If 'app-pagination' is an Angular component, then verify that it is part of this module.
+2. If 'app-pagination' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:8:
+[37m      100 │         [32m<app-pagination [meta]="meta" (pageChange)="onPage($event[37m...
+          ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'meta' since it isn't a known property of 'app-pagination'.
+1. If 'app-pagination' is an Angular component and it has 'meta' input, then verify that it is part of this module.
+2. If 'app-pagination' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:24:
+[37m      100 │         <app-pagination [32m[meta]="meta"[37m (pageChange)="onPage($event...
+          ╵                         [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type 'Event' is not assignable to parameter of type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:59:
+[37m      100 │ ...   <app-pagination [meta]="meta" (pageChange)="onPage([32m$event[37m)" />
+          ╵                                                          [32m~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:109:2:
+[37m      109 │   [32m<app-confirm-dialog[37m
+          ╵   [32m~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'message' since it isn't a known property of 'app-confirm-dialog'.
+1. If 'app-confirm-dialog' is an Angular component and it has 'message' input, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:111:4:
+[37m      111 │     [32m[message]="'¿Eliminás a ' + deleteTarget.nombre_completo + [37m...
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'per_page' does not exist in type '{ search?: string | undefined; page?: number | undefined; activo?: boolean | undefined; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.ts:47:6:
+[37m      47 │       [32mper_page[37m: this.perPage,
+         ╵       [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.153 seconds] - 2026-06-19T05:09:18.322Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:22:56:
+[37m      22 │ ...rm-select-sm w-auto" [32m[(ngModel)]="perPage"[37m (ngModelChange)="onP...
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-pagination' is not a known element:
+1. If 'app-pagination' is an Angular component, then verify that it is part of this module.
+2. If 'app-pagination' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:8:
+[37m      100 │         [32m<app-pagination [meta]="meta" (pageChange)="onPage($event[37m...
+          ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'meta' since it isn't a known property of 'app-pagination'.
+1. If 'app-pagination' is an Angular component and it has 'meta' input, then verify that it is part of this module.
+2. If 'app-pagination' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:24:
+[37m      100 │         <app-pagination [32m[meta]="meta"[37m (pageChange)="onPage($event...
+          ╵                         [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type 'Event' is not assignable to parameter of type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:59:
+[37m      100 │ ...   <app-pagination [meta]="meta" (pageChange)="onPage([32m$event[37m)" />
+          ╵                                                          [32m~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:109:2:
+[37m      109 │   [32m<app-confirm-dialog[37m
+          ╵   [32m~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'message' since it isn't a known property of 'app-confirm-dialog'.
+1. If 'app-confirm-dialog' is an Angular component and it has 'message' input, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:111:4:
+[37m      111 │     [32m[message]="'¿Eliminás a ' + deleteTarget.nombre_completo + [37m...
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'per_page' does not exist in type '{ search?: string | undefined; page?: number | undefined; activo?: boolean | undefined; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.ts:47:6:
+[37m      47 │       [32mper_page[37m: this.perPage,
+         ╵       [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.211 seconds] - 2026-06-19T05:10:02.871Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'select'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:22:56:
+[37m      22 │ ...rm-select-sm w-auto" [32m[(ngModel)]="perPage"[37m (ngModelChange)="onP...
+         ╵                         [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-pagination' is not a known element:
+1. If 'app-pagination' is an Angular component, then verify that it is part of this module.
+2. If 'app-pagination' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:8:
+[37m      100 │         [32m<app-pagination [meta]="meta" (pageChange)="onPage($event[37m...
+          ╵         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'meta' since it isn't a known property of 'app-pagination'.
+1. If 'app-pagination' is an Angular component and it has 'meta' input, then verify that it is part of this module.
+2. If 'app-pagination' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:24:
+[37m      100 │         <app-pagination [32m[meta]="meta"[37m (pageChange)="onPage($event...
+          ╵                         [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2345: Argument of type 'Event' is not assignable to parameter of type 'number'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:100:59:
+[37m      100 │ ...   <app-pagination [meta]="meta" (pageChange)="onPage([32m$event[37m)" />
+          ╵                                                          [32m~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:109:2:
+[37m      109 │   [32m<app-confirm-dialog[37m
+          ╵   [32m~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'message' since it isn't a known property of 'app-confirm-dialog'.
+1. If 'app-confirm-dialog' is an Angular component and it has 'message' input, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:111:4:
+[37m      111 │     [32m[message]="'¿Eliminás a ' + deleteTarget.nombre_completo + [37m...
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'per_page' does not exist in type '{ search?: string | undefined; page?: number | undefined; activo?: boolean | undefined; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.ts:47:6:
+[37m      47 │       [32mper_page[37m: this.perPage,
+         ╵       [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.154 seconds] - 2026-06-19T05:10:04.722Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2353: Object literal may only specify known properties, and 'per_page' does not exist in type '{ search?: string | undefined; page?: number | undefined; activo?: boolean | undefined; }'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.ts:47:6:
+[37m      47 │       [32mper_page[37m: this.perPage,
+         ╵       [32m~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m             [2m | [22m[36m274.86 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m               [2m | [22m  [36m7.93 kB[39m[2m | [22m
+[32mchunk-RUZELKZF.js[39m  [2m | [22m[2m-[22m                  [2m | [22m  [36m2.66 kB[39m[2m | [22m
+[32mchunk-PZ5AY32C.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m234 bytes[39m[2m | [22m
+[32mchunk-HXJGBCK5.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m187 bytes[39m[2m | [22m
+[32mpolyfills.js[39m       [2m | [22m[2mpolyfills[22m          [2m | [22m [36m95 bytes[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m      [2m | [22m[1m285.97 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mchunk-AD6QHPAE.js[39m  [2m | [22m[2msoldadores-module[22m  [2m | [22m [36m61.23 kB[39m[2m | [22m
+[32mchunk-URA6RZAX.js[39m  [2m | [22m[2mlayout-module[22m      [2m | [22m [36m21.89 kB[39m[2m | [22m
+[32mchunk-FPUOZXW2.js[39m  [2m | [22m[2mdashboard-module[22m   [2m | [22m [36m18.15 kB[39m[2m | [22m
+[32mchunk-UUMQHPYC.js[39m  [2m | [22m[2mauth-module[22m        [2m | [22m [36m15.73 kB[39m[2m | [22m
+[32mchunk-M3NAAF5N.js[39m  [2m | [22m[2mcertificados-module[22m[2m | [22m  [36m1.14 kB[39m[2m | [22m
+[32mchunk-DXOOQB2Z.js[39m  [2m | [22m[2mempresas-module[22m    [2m | [22m  [36m1.10 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.107 seconds] - 2026-06-19T05:10:10.088Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m[2m | [22m[36m280.82 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.608 seconds] - 2026-06-19T06:08:46.042Z
+
+Stylesheet update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-2P5GR4YF.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m23.57 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.295 seconds] - 2026-06-19T06:09:16.053Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-2HRC6O6K.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m23.66 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.149 seconds] - 2026-06-19T06:09:20.876Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-W5RR5RKM.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m26.81 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.212 seconds] - 2026-06-19T06:10:07.408Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-5ZMLJBOE.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m27.98 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.218 seconds] - 2026-06-19T06:10:19.984Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-WMGWVW5T.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m60.76 kB[39m[2m | [22m
+[32mchunk-M74QAIZ6.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m27.98 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.219 seconds] - 2026-06-19T06:10:44.154Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-JDPYJOKC.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m28.34 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.158 seconds] - 2026-06-19T06:15:14.790Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.191 seconds] - 2026-06-19T06:15:22.068Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'toggle' does not exist on type 'ThemeService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:75:33:
+[37m      75 │                   (click)="theme.[32mtoggle[37m()"
+         ╵                                  [32m~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.156 seconds] - 2026-06-19T06:15:27.418Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'toggle' does not exist on type 'ThemeService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:75:33:
+[37m      75 │                   (click)="theme.[32mtoggle[37m()"
+         ╵                                  [32m~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.196 seconds] - 2026-06-19T06:15:32.318Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'toggle' does not exist on type 'ThemeService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:75:33:
+[37m      75 │                   (click)="theme.[32mtoggle[37m()"
+         ╵                                  [32m~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.168 seconds] - 2026-06-19T06:15:47.525Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'toggle' does not exist on type 'ThemeService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:75:33:
+[37m      75 │                   (click)="theme.[32mtoggle[37m()"
+         ╵                                  [32m~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m             [2m | [22m[36m280.82 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m               [2m | [22m  [36m7.93 kB[39m[2m | [22m
+[32mchunk-RUZELKZF.js[39m  [2m | [22m[2m-[22m                  [2m | [22m  [36m2.66 kB[39m[2m | [22m
+[32mchunk-PZ5AY32C.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m234 bytes[39m[2m | [22m
+[32mchunk-HXJGBCK5.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m187 bytes[39m[2m | [22m
+[32mpolyfills.js[39m       [2m | [22m[2mpolyfills[22m          [2m | [22m [36m95 bytes[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m      [2m | [22m[1m291.93 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mchunk-WMGWVW5T.js[39m  [2m | [22m[2msoldadores-module[22m  [2m | [22m [36m60.76 kB[39m[2m | [22m
+[32mchunk-ULIPSCKV.js[39m  [2m | [22m[2mlayout-module[22m      [2m | [22m [36m33.24 kB[39m[2m | [22m
+[32mchunk-FPUOZXW2.js[39m  [2m | [22m[2mdashboard-module[22m   [2m | [22m [36m18.15 kB[39m[2m | [22m
+[32mchunk-UUMQHPYC.js[39m  [2m | [22m[2mauth-module[22m        [2m | [22m [36m15.73 kB[39m[2m | [22m
+[32mchunk-M3NAAF5N.js[39m  [2m | [22m[2mcertificados-module[22m[2m | [22m  [36m1.14 kB[39m[2m | [22m
+[32mchunk-DXOOQB2Z.js[39m  [2m | [22m[2mempresas-module[22m    [2m | [22m  [36m1.10 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.216 seconds] - 2026-06-19T06:16:02.688Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-7HHODGSO.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m28.35 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.231 seconds] - 2026-06-19T06:16:43.873Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mchunk-LUWNHPP5.js[39m  [2m | [22m[2mlayout-module[22m   [2m | [22m[36m28.35 kB[39m[2m | [22m
+[32mchunk-A2C7C7UG.js[39m  [2m | [22m[2mdashboard-module[22m[2m | [22m[36m18.10 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.145 seconds] - 2026-06-19T06:16:56.656Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m7.93 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mchunk-EZX537L7.js[39m  [2m | [22m[2mlayout-module[22m   [2m | [22m[36m28.35 kB[39m[2m | [22m
+[32mchunk-DQMGP6FI.js[39m  [2m | [22m[2mdashboard-module[22m[2m | [22m[36m18.14 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.143 seconds] - 2026-06-19T06:17:02.972Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m[2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.115 seconds] - 2026-06-19T06:22:27.905Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mchunk-YXG7CSJ3.js[39m  [2m | [22m[2mlayout-module[22m   [2m | [22m[36m28.35 kB[39m[2m | [22m
+[32mchunk-JOZKE3S3.js[39m  [2m | [22m[2mdashboard-module[22m[2m | [22m[36m18.14 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.137 seconds] - 2026-06-19T06:22:37.689Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mchunk-ZNMPHFUI.js[39m  [2m | [22m[2mlayout-module[22m   [2m | [22m[36m28.35 kB[39m[2m | [22m
+[32mchunk-UBRS6ZSL.js[39m  [2m | [22m[2mdashboard-module[22m[2m | [22m[36m18.26 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.158 seconds] - 2026-06-19T06:22:42.382Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mchunk-3SGJTPAD.js[39m  [2m | [22m[2mlayout-module[22m   [2m | [22m[36m28.35 kB[39m[2m | [22m
+[32mchunk-SGJ3HJ72.js[39m  [2m | [22m[2mdashboard-module[22m[2m | [22m[36m18.32 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.116 seconds] - 2026-06-19T06:22:49.932Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-RDG24FWX.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m60.76 kB[39m[2m | [22m
+[32mchunk-JDHLXM3L.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m28.35 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.179 seconds] - 2026-06-19T06:23:00.001Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-B6OZF2RO.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m60.88 kB[39m[2m | [22m
+[32mchunk-UFKEDA3Z.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m28.35 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.180 seconds] - 2026-06-19T06:23:09.673Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-OF3LIWSQ.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m60.95 kB[39m[2m | [22m
+[32mchunk-UUCOKT7C.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m28.35 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.145 seconds] - 2026-06-19T06:23:15.562Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-XWYFN3P3.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m60.95 kB[39m[2m | [22m
+[32mchunk-ZUMVKCB4.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m28.35 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.159 seconds] - 2026-06-19T06:23:22.894Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-7I3NFZVE.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m61.07 kB[39m[2m | [22m
+[32mchunk-2T23R55B.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m28.35 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.164 seconds] - 2026-06-19T06:23:28.620Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-S4WKZK6Y.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m61.14 kB[39m[2m | [22m
+[32mchunk-QLH43VAM.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m28.35 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.137 seconds] - 2026-06-19T06:23:35.380Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m[2m | [22m[36m287.49 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.562 seconds] - 2026-06-19T06:27:50.482Z
+
+Stylesheet update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m            [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m           [2m | [22m[1mRaw size[22m
+[32mchunk-7AP4S6IJ.js[39m  [2m | [22m[2mlayout-module[22m   [2m | [22m[36m28.35 kB[39m[2m | [22m
+[32mchunk-Z6PB23TT.js[39m  [2m | [22m[2mdashboard-module[22m[2m | [22m[36m16.23 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.133 seconds] - 2026-06-19T06:28:06.534Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m[2m | [22m[36m288.33 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.566 seconds] - 2026-06-19T06:43:21.279Z
+
+Stylesheet update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-TOOVWC6J.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m28.56 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.226 seconds] - 2026-06-19T06:43:39.258Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-Y4RLR6RU.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m28.55 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.192 seconds] - 2026-06-19T06:43:55.304Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-XOEHPKPV.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m28.38 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.202 seconds] - 2026-06-19T06:44:00.182Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-CM4DDKQF.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m61.02 kB[39m[2m | [22m
+[32mchunk-XJYGXUAQ.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m28.38 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.293 seconds] - 2026-06-19T06:44:13.523Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-RN2O3MFX.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m61.00 kB[39m[2m | [22m
+[32mchunk-OPJWDE3D.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m28.38 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.231 seconds] - 2026-06-19T06:44:19.831Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-5NV66JA3.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m61.01 kB[39m[2m | [22m
+[32mchunk-GOOK2663.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m28.38 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.154 seconds] - 2026-06-19T06:44:23.886Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.145 seconds] - 2026-06-19T06:47:53.544Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2305: Module '"../core/services/theme.service"' has no exported member 'ThemeMode'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.ts:6:23:
+[37m      6 │ import { ThemeService, [32mThemeMode[37m } from '../core/services/theme.ser...
+        ╵                        [32m~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'mode$' does not exist on type 'ThemeService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.ts:42:15:
+[37m      42 │     this.theme.[32mmode$[37m.pipe(takeUntil(this.destroy$)).subscribe(m => {
+         ╵                [32m~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'm' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.ts:42:62:
+[37m      42 │     this.theme.mode$.pipe(takeUntil(this.destroy$)).subscribe([32mm[37m => {
+         ╵                                                               [32m^[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'setMode' does not exist on type 'ThemeService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.ts:66:45:
+[37m      66 │ ...meMode): void  { this.theme.[32msetMode[37m(m); this.themePickerOpen = ...
+         ╵                                [32m~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.183 seconds] - 2026-06-19T06:48:04.203Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themePickerOpen' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:77:36:
+[37m      77 │                     [class.active]="[32mthemePickerOpen[37m"
+         ╵                                     [32m~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themePickerOpen' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:78:29:
+[37m      78 │                     (click)="[32mthemePickerOpen[37m = !themePickerOpen"
+         ╵                              [32m~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themePickerOpen' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:78:48:
+[37m      78 │                     (click)="themePickerOpen = ![32mthemePickerOpen[37m"
+         ╵                                                 [32m~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themeMode' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:79:40:
+[37m      79 │                     [title]="'Tema: ' + [32mthemeMode[37m">
+         ╵                                         [32m~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themeMode' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:82:41:
+[37m      82 │                    'bi-sun-fill':        [32mthemeMode[37m === 'light',
+         ╵                                          [32m~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themeMode' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:83:41:
+[37m      83 │                    'bi-moon-stars-fill': [32mthemeMode[37m === 'dark',
+         ╵                                          [32m~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themeMode' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:84:41:
+[37m      84 │                    'bi-circle-half':     [32mthemeMode[37m === 'system'
+         ╵                                          [32m~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themePickerOpen' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:88:17:
+[37m      88 │             @if ([32mthemePickerOpen[37m) {
+         ╵                  [32m~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'closePicker' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:89:51:
+[37m      89 │ ...        <div class="theme-backdrop" (click)="[32mclosePicker[37m()"></div>
+         ╵                                                 [32m~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themeMode' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:93:40:
+[37m      93 │                         [class.active]="[32mthemeMode[37m === 'light'"
+         ╵                                         [32m~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'setTheme' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:94:33:
+[37m      94 │                         (click)="[32msetTheme[37m('light')">
+         ╵                                  [32m~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themeMode' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:100:40:
+[37m      100 │                         [class.active]="[32mthemeMode[37m === 'system'"
+          ╵                                         [32m~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'setTheme' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:101:33:
+[37m      101 │                         (click)="[32msetTheme[37m('system')">
+          ╵                                  [32m~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'themeMode' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:107:40:
+[37m      107 │                         [class.active]="[32mthemeMode[37m === 'dark'"
+          ╵                                         [32m~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'setTheme' does not exist on type 'LayoutComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:108:33:
+[37m      108 │                         (click)="[32msetTheme[37m('dark')">
+          ╵                                  [32m~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m             [2m | [22m[36m288.33 kB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m               [2m | [22m  [36m8.09 kB[39m[2m | [22m
+[32mchunk-RUZELKZF.js[39m  [2m | [22m[2m-[22m                  [2m | [22m  [36m2.66 kB[39m[2m | [22m
+[32mchunk-PZ5AY32C.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m234 bytes[39m[2m | [22m
+[32mchunk-HXJGBCK5.js[39m  [2m | [22m[2m-[22m                  [2m | [22m[36m187 bytes[39m[2m | [22m
+[32mpolyfills.js[39m       [2m | [22m[2mpolyfills[22m          [2m | [22m [36m95 bytes[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m      [2m | [22m[1m299.59 kB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m              [2m | [22m [1mRaw size[22m
+[32mchunk-5NV66JA3.js[39m  [2m | [22m[2msoldadores-module[22m  [2m | [22m [36m61.01 kB[39m[2m | [22m
+[32mchunk-BYNRWLSI.js[39m  [2m | [22m[2mlayout-module[22m      [2m | [22m [36m22.95 kB[39m[2m | [22m
+[32mchunk-Z6PB23TT.js[39m  [2m | [22m[2mdashboard-module[22m   [2m | [22m [36m16.23 kB[39m[2m | [22m
+[32mchunk-UUMQHPYC.js[39m  [2m | [22m[2mauth-module[22m        [2m | [22m [36m15.73 kB[39m[2m | [22m
+[32mchunk-M3NAAF5N.js[39m  [2m | [22m[2mcertificados-module[22m[2m | [22m  [36m1.14 kB[39m[2m | [22m
+[32mchunk-DXOOQB2Z.js[39m  [2m | [22m[2mempresas-module[22m    [2m | [22m  [36m1.10 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.191 seconds] - 2026-06-19T06:48:16.407Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m         [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m        [2m | [22m[1mRaw size[22m
+[32mchunk-5XQ36GIS.js[39m  [2m | [22m[2mlayout-module[22m[2m | [22m[36m21.05 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.179 seconds] - 2026-06-19T06:48:24.873Z
+
+Component update sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m             [2m | [22m [36m8.09 kB[39m[2m | [22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m            [2m | [22m[1mRaw size[22m
+[32mchunk-QOKJWZSI.js[39m  [2m | [22m[2msoldadores-module[22m[2m | [22m[36m61.39 kB[39m[2m | [22m
+[32mchunk-P3ETIWEQ.js[39m  [2m | [22m[2mlayout-module[22m    [2m | [22m[36m21.05 kB[39m[2m | [22m
+
+Application bundle generation complete. [0.334 seconds] - 2026-06-19T06:57:53.535Z
+
+Page reload sent to client(s).
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.253 seconds] - 2026-06-19T06:58:01.449Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-toast' is not a known element:
+1. If 'app-toast' is an Angular component, then verify that it is part of this module.
+2. If 'app-toast' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:102:0:
+[37m      102 │ [32m<app-toast />[37m
+          ╵ [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.096 seconds] - 2026-06-19T06:58:06.635Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-toast' is not a known element:
+1. If 'app-toast' is an Angular component, then verify that it is part of this module.
+2. If 'app-toast' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:102:0:
+[37m      102 │ [32m<app-toast />[37m
+          ╵ [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.112 seconds] - 2026-06-19T06:58:11.096Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-toast' is not a known element:
+1. If 'app-toast' is an Angular component, then verify that it is part of this module.
+2. If 'app-toast' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:102:0:
+[37m      102 │ [32m<app-toast />[37m
+          ╵ [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.236 seconds] - 2026-06-19T07:14:45.904Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-toast' is not a known element:
+1. If 'app-toast' is an Angular component, then verify that it is part of this module.
+2. If 'app-toast' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:102:0:
+[37m      102 │ [32m<app-toast />[37m
+          ╵ [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.185 seconds] - 2026-06-19T07:14:59.137Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-toast' is not a known element:
+1. If 'app-toast' is an Angular component, then verify that it is part of this module.
+2. If 'app-toast' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:102:0:
+[37m      102 │ [32m<app-toast />[37m
+          ╵ [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.351 seconds] - 2026-06-19T07:18:39.963Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-toast' is not a known element:
+1. If 'app-toast' is an Angular component, then verify that it is part of this module.
+2. If 'app-toast' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:102:0:
+[37m      102 │ [32m<app-toast />[37m
+          ╵ [32m~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.237 seconds] - 2026-06-19T07:18:46.576Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:103:0:
+[37m      103 │ [32m<app-confirm-dialog />[37m
+          ╵ [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'message' since it isn't a known property of 'app-confirm-dialog'.
+1. If 'app-confirm-dialog' is an Angular component and it has 'message' input, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:109:4:
+[37m      109 │     [32m[message]="'¿Eliminás a ' + deleteTarget.nombre_completo + [37m...
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.090 seconds] - 2026-06-19T07:18:50.640Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:103:0:
+[37m      103 │ [32m<app-confirm-dialog />[37m
+          ╵ [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'message' since it isn't a known property of 'app-confirm-dialog'.
+1. If 'app-confirm-dialog' is an Angular component and it has 'message' input, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:109:4:
+[37m      109 │     [32m[message]="'¿Eliminás a ' + deleteTarget.nombre_completo + [37m...
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.095 seconds] - 2026-06-19T07:18:54.374Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:103:0:
+[37m      103 │ [32m<app-confirm-dialog />[37m
+          ╵ [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'message' since it isn't a known property of 'app-confirm-dialog'.
+1. If 'app-confirm-dialog' is an Angular component and it has 'message' input, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:109:4:
+[37m      109 │     [32m[message]="'¿Eliminás a ' + deleteTarget.nombre_completo + [37m...
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.250 seconds] - 2026-06-19T07:19:12.984Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:103:0:
+[37m      103 │ [32m<app-confirm-dialog />[37m
+          ╵ [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'deleteTarget' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:106:5:
+[37m      106 │ @if ([32mdeleteTarget[37m) {
+          ╵      [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:14:15:
+[37m      14 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'message' since it isn't a known property of 'app-confirm-dialog'.
+1. If 'app-confirm-dialog' is an Angular component and it has 'message' input, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.
+3. To allow any property add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:109:4:
+[37m      109 │     [32m[message]="'¿Eliminás a ' + deleteTarget.nombre_completo + [37m...
+          ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:14:15:
+[37m      14 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'deleteTarget' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:109:32:
+[37m      109 │ ...ssage]="'¿Eliminás a ' [32m+ deleteTarg[37met.nombre_completo + '? E...
+          ╵                           [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:14:15:
+[37m      14 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'doDelete' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:112:17:
+[37m      112 │     (confirmed)="[32mdoDelete[37m()"
+          ╵                  [32m~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:14:15:
+[37m      14 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'cancelDelete' does not exist on type 'SoldadoresListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/soldadores/list/soldadores-list.component.html:113:17:
+[37m      113 │     (cancelled)="[32mcancelDelete[37m()" />
+          ╵                  [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component SoldadoresListComponent.
+
+    src/app/soldadores/list/soldadores-list.component.ts:14:15:
+[37m      14 │   templateUrl: [32m'./soldadores-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.227 seconds] - 2026-06-19T07:19:19.170Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:103:0:
+[37m      103 │ [32m<app-confirm-dialog />[37m
+          ╵ [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[33m>[39m Changes detected. Rebuilding...
+[32m√[39m Changes detected. Rebuilding...
+Application bundle generation failed. [0.216 seconds] - 2026-06-19T07:19:25.419Z
+
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG8001: 'app-confirm-dialog' is not a known element:
+1. If 'app-confirm-dialog' is an Angular component, then verify that it is part of this module.
+2. If 'app-confirm-dialog' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/layout/layout.component.html:103:0:
+[37m      103 │ [32m<app-confirm-dialog />[37m
+          ╵ [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component LayoutComponent.
+
+    src/app/layout/layout.component.ts:11:15:
+[37m      11 │   templateUrl: [32m'./layout.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[39m[22m

@@ -1,0 +1,143 @@
+<!-- Back + título -->
+<div class="d-flex align-items-center gap-3 mb-4">
+  <button type="button" class="btn-icon" (click)="back()" title="Volver">
+    <i class="bi bi-arrow-left"></i>
+  </button>
+  <h5 class="fw-bold mb-0">{{ isEdit ? 'Editar soldador' : 'Nuevo soldador' }}</h5>
+</div>
+
+@if (loading) {
+  <div class="text-center py-5 text-muted">
+    <div class="spinner-border spinner-border-sm me-2"></div>Cargando...
+  </div>
+}
+
+@if (!loading) {
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-7 col-xl-6">
+      <div class="card">
+        <div class="card-body p-4">
+          <form [formGroup]="form" novalidate autocomplete="off">
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <label class="form-label fw-semibold small">
+                  Apellido <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" formControlName="apellido"
+                  [class.is-invalid]="f('apellido').invalid && f('apellido').touched" />
+                <div class="invalid-feedback">Requerido, máx 100 caracteres.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-semibold small">
+                  Nombre <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" formControlName="nombre"
+                  [class.is-invalid]="f('nombre').invalid && f('nombre').touched" />
+                <div class="invalid-feedback">Requerido, máx 100 caracteres.</div>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label fw-semibold small">
+                  DNI <span class="text-danger">*</span>
+                </label>
+                <input type="text" class="form-control" formControlName="dni"
+                  [class.is-invalid]="f('dni').invalid && f('dni').touched" />
+                <div class="invalid-feedback">
+                  @if (f('dni').errors?.['required']) { Requerido. }
+                  @if (f('dni').errors?.['taken'])    { DNI ya registrado. }
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label fw-semibold small">Fecha de nacimiento</label>
+                <input type="date" class="form-control" formControlName="fecha_nacimiento" />
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label fw-semibold small">Nacionalidad</label>
+                <input type="text" class="form-control" formControlName="nacionalidad"
+                  placeholder="Ej: Argentina" />
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label fw-semibold small">Cuño</label>
+                <input type="text" class="form-control" formControlName="cuño"
+                  placeholder="Ej: K-001" />
+              </div>
+
+              <div class="col-md-4">
+                <label class="form-label fw-semibold small">Ciudad</label>
+                <input type="text" class="form-control" formControlName="ciudad" />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-semibold small">Teléfono</label>
+                <input type="text" class="form-control" formControlName="telefono" />
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-semibold small">Email</label>
+                <input type="email" class="form-control" formControlName="email"
+                  [class.is-invalid]="f('email').invalid && f('email').touched" />
+                <div class="invalid-feedback">Email inválido.</div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox"
+                    id="chk-activo" formControlName="activo" />
+                  <label class="form-check-label" for="chk-activo">Soldador activo</label>
+                </div>
+              </div>
+
+              <!-- Foto DNI -->
+              <div class="col-12">
+                <label class="form-label fw-semibold small">Foto DNI</label>
+                @if (fotoExistente && !fotoPreview) {
+                  <div class="mb-2 p-2 border rounded bg-body-secondary text-center small text-success">
+                    <i class="bi bi-check-circle me-1"></i>Foto cargada
+                  </div>
+                }
+                @if (fotoPreview) {
+                  <div class="mb-2 text-center">
+                    <img [src]="fotoPreview" alt="Vista previa" class="rounded border"
+                      style="max-height:80px; max-width:120px; object-fit:cover;" />
+                  </div>
+                }
+                <input type="file" class="form-control form-control-sm"
+                  accept="image/png,image/jpeg,image/jpg"
+                  (change)="onFotoSelected($event)" />
+                <div class="form-text">JPG o PNG. Máx 4MB.</div>
+              </div>
+
+            </div>
+
+            <div class="d-flex justify-content-end gap-2 mt-4 pt-3 border-top">
+              <button type="button" class="btn btn-secondary" (click)="back()">Cancelar</button>
+              <button type="button" class="btn btn-primary fw-semibold"
+                      [disabled]="saving || uploadingFoto" (click)="openReview()">
+                @if (saving || uploadingFoto) {
+                  <span class="spinner-border spinner-border-sm me-2"></span>
+                }
+                {{ isEdit ? 'Guardar cambios' : 'Crear soldador' }}
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+
+@if (showReview) {
+  <app-data-review-modal
+    [title]="isEdit ? 'Editar soldador' : 'Nuevo soldador'"
+    [fields]="reviewFields"
+    [isEdit]="isEdit"
+    (confirmed)="onConfirmed()"
+    (cancelled)="showReview = false">
+  </app-data-review-modal>
+}

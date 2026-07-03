@@ -1,0 +1,6 @@
+.sort-col {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  &:hover { background: rgba(0,0,0,.03); }
+}

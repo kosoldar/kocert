@@ -1,0 +1,113 @@
+@if (loading) {
+  <div class="text-center py-5">
+    <div class="spinner-border text-primary" role="status"></div>
+  </div>
+}
+
+@if (error) {
+  <div class="alert alert-danger">{{ error }}</div>
+}
+
+@if (!loading && stats) {
+
+  <div class="page-header mb-4">
+    <h2 class="page-title">Dashboard</h2>
+    <p class="text-muted mb-0 small">Resumen operativo del sistema</p>
+  </div>
+
+  <!-- ── Stats cards ──────────────────────────────────────────── -->
+  <div class="row g-3 mb-4">
+
+    <div class="col-6 col-lg-3">
+      <div class="stat-card">
+        <div class="stat-icon bg-primary-soft">
+          <i class="bi bi-person-badge"></i>
+        </div>
+        <div class="stat-body">
+          <div class="stat-value">{{ stats.soldadores }}</div>
+          <div class="stat-label">Soldadores</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-lg-3">
+      <div class="stat-card">
+        <div class="stat-icon bg-success-soft">
+          <i class="bi bi-patch-check text-success"></i>
+        </div>
+        <div class="stat-body">
+          <div class="stat-value text-success">{{ stats.vigentes }}</div>
+          <div class="stat-label">Certificados vigentes</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-lg-3">
+      <div class="stat-card">
+        <div class="stat-icon bg-danger-soft">
+          <i class="bi bi-x-circle text-danger"></i>
+        </div>
+        <div class="stat-body">
+          <div class="stat-value text-danger">{{ stats.vencidos }}</div>
+          <div class="stat-label">Vencidos</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-lg-3">
+      <div class="stat-card border-warning">
+        <div class="stat-icon bg-warning-soft">
+          <i class="bi bi-bell text-warning"></i>
+        </div>
+        <div class="stat-body">
+          <div class="stat-value text-warning">{{ stats.por_vencer }}</div>
+          <div class="stat-label">Vencen en 30 días</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── Últimos certificados ─────────────────────────────────── -->
+  <div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+      <span class="fw-semibold">Últimos certificados emitidos</span>
+      <span class="badge bg-secondary">{{ stats.emitidos_mes }} este mes</span>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-hover mb-0">
+        <thead class="table-light">
+          <tr>
+            <th>N°</th>
+            <th>Soldador</th>
+            <th>Norma</th>
+            <th>Vencimiento</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (c of ultimos; track c.id) {
+            <tr>
+              <td class="fw-semibold">{{ c.numero }}</td>
+              <td>{{ c.soldador }}</td>
+              <td><span class="badge bg-body border text-body-secondary fw-normal">{{ c.norma }}</span></td>
+              <td>{{ c.vencimiento | date:'dd/MM/yyyy' }}</td>
+              <td>
+                <span class="badge" [ngClass]="'bg-' + estadoBadge(c.estado)">
+                  {{ c.estado }}
+                </span>
+              </td>
+            </tr>
+          } @empty {
+            <tr>
+              <td colspan="5" class="text-center text-muted py-4">
+                Sin certificados registrados
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+}

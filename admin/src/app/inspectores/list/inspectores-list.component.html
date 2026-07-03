@@ -1,0 +1,87 @@
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h5 class="fw-bold mb-0">Inspectores</h5>
+  <button class="btn btn-primary btn-sm" (click)="goNew()">
+    <i class="bi bi-plus-lg me-1"></i>Nuevo inspector
+  </button>
+</div>
+
+<div class="card">
+  <div class="card-body p-0">
+
+    @if (loading) {
+      <div class="text-center py-5 text-muted">
+        <div class="spinner-border spinner-border-sm me-2"></div>Cargando...
+      </div>
+    }
+
+    @if (!loading && inspectores.length === 0) {
+      <div class="text-center py-5 text-muted">
+        <i class="bi bi-person-badge d-block fs-1 mb-2 opacity-25"></i>
+        <p class="mb-0">No hay inspectores registrados.</p>
+      </div>
+    }
+
+    @if (!loading && inspectores.length > 0) {
+      <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr>
+              <th class="ps-4">Nombre</th>
+              <th>Certificación</th>
+              <th class="d-none d-md-table-cell">Teléfono</th>
+              <th class="d-none d-md-table-cell">Email</th>
+              <th>Estado</th>
+              <th>Firma</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (i of inspectores; track i.id) {
+              <tr>
+                <td class="ps-4 fw-semibold small">{{ i.nombre }}</td>
+                <td class="text-muted small">{{ i.certificacion }}</td>
+                <td class="text-muted small d-none d-md-table-cell">{{ i.telefono ?? '—' }}</td>
+                <td class="text-muted small d-none d-md-table-cell">{{ i.email ?? '—' }}</td>
+                <td>
+                  <span class="badge rounded-pill small"
+                    [class.bg-success]="i.activo"
+                    [class.bg-secondary-subtle]="!i.activo"
+                    [class.text-secondary-emphasis]="!i.activo">
+                    {{ i.activo ? 'Activo' : 'Inactivo' }}
+                  </span>
+                </td>
+                <td>
+                  @if (i.firma_path) {
+                    <i class="bi bi-check-circle-fill text-success" title="Firma cargada"></i>
+                  } @else {
+                    <i class="bi bi-x-circle text-muted" title="Sin firma"></i>
+                  }
+                </td>
+                <td class="text-end pe-3">
+                  <button class="btn-icon me-1" title="Editar" (click)="goEdit(i)">
+                    <i class="bi bi-pencil"></i>
+                  </button>
+                  <button class="btn-icon btn-icon--danger" title="Dar de baja" (click)="confirmDelete(i)">
+                    <i class="bi bi-person-dash"></i>
+                  </button>
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    }
+
+  </div>
+</div>
+
+@if (deleteTarget) {
+  <app-confirm-dialog
+    title="Dar de baja inspector"
+    [message]="'¿Dás de baja a ' + deleteTarget.nombre + '? Quedará inactivo.'"
+    confirmLabel="Dar de baja"
+    confirmClass="btn-danger"
+    (confirmed)="doDelete()"
+    (cancelled)="cancelDelete()">
+  </app-confirm-dialog>
+}

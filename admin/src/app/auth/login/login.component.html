@@ -1,0 +1,76 @@
+<div class="login-wrap d-flex align-items-center justify-content-center min-vh-100">
+  <div class="login-card card p-4" style="width: 100%; max-width: 400px;">
+
+    <!-- Logo / marca -->
+    <div class="text-center mb-4">
+      <div class="brand-badge mb-2">
+        <i class="bi bi-fire brand-icon"></i>
+      </div>
+      <h1 class="h4 fw-bold mb-0" style="color: var(--ko-primary)">KoCert</h1>
+      <p class="text-muted small mb-0">Sistema de Certificación de Soldadores</p>
+    </div>
+
+    <!-- Error global -->
+    @if (error) {
+      <div class="alert alert-danger py-2 small mb-3" role="alert">{{ error }}</div>
+    }
+
+    <form [formGroup]="form" (ngSubmit)="submit()" novalidate autocomplete="off">
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label for="email" class="form-label fw-semibold small">Email</label>
+        <input
+          id="email"
+          type="email"
+          class="form-control"
+          [class.is-invalid]="email.invalid && email.touched"
+          formControlName="email"
+          placeholder="usuario@kosoldar.com"
+          autocomplete="username"
+        />
+        <div class="invalid-feedback">
+          @if (email.errors?.['required']) { Campo requerido. }
+          @if (email.errors?.['email'])    { Email inválido. }
+        </div>
+      </div>
+
+      <!-- Contraseña -->
+      <div class="mb-4">
+        <label for="password" class="form-label fw-semibold small">Contraseña</label>
+        <div class="input-group">
+          <input
+            id="password"
+            [type]="showPass ? 'text' : 'password'"
+            class="form-control"
+            [class.is-invalid]="password.invalid && password.touched"
+            formControlName="password"
+            placeholder="••••••••"
+            autocomplete="current-password"
+          />
+          <button type="button" class="btn btn-outline-secondary"
+                  (click)="showPass = !showPass" tabindex="-1">
+            <i class="bi" [ngClass]="showPass ? 'bi-eye-slash' : 'bi-eye'"></i>
+          </button>
+          <div class="invalid-feedback">
+            @if (password.errors?.['required'])  { Campo requerido. }
+            @if (password.errors?.['minlength']) { Mínimo 6 caracteres. }
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn btn-primary w-100" [disabled]="loading">
+        @if (loading) {
+          <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+        }
+        {{ loading ? 'Ingresando...' : 'Ingresar' }}
+      </button>
+
+    </form>
+
+    <p class="text-center text-muted small mt-3 mb-0">
+      Acceso restringido — solo personal Kosoldar
+    </p>
+  </div>
+</div>

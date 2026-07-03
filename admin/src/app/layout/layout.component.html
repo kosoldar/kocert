@@ -1,0 +1,102 @@
+<div class="admin-wrapper d-flex">
+
+  <!-- ── Mobile backdrop ──────────────────────────────────────── -->
+  @if (sidebarOpen) {
+    <div class="sidebar-backdrop d-lg-none" (click)="closeSidebar()"></div>
+  }
+
+  <!-- ── Sidebar ──────────────────────────────────────────────── -->
+  <aside class="sidebar d-flex flex-column"
+         [class.sidebar-open]="sidebarOpen"
+         [class.sidebar-mini]="sidebarMini"
+         style="height:100vh; position:sticky; top:0;">
+
+    <!-- Brand -->
+    <div class="sidebar-logo d-flex align-items-center gap-2 px-3 py-3 border-bottom border-secondary">
+      <div class="sidebar-brand__mark">
+        <i class="bi bi-fire"></i>
+      </div>
+      <div class="sidebar-brand">
+        <span class="fw-bold text-white sidebar-label">KoCert</span>
+        <span class="sidebar-brand__sub sidebar-label">Kosoldar</span>
+      </div>
+    </div>
+
+    <!-- Nav -->
+    <nav class="sidebar-nav flex-grow-1 px-2 py-2 overflow-y-auto overflow-x-hidden">
+      @for (item of navItems; track item.route) {
+        <a class="sidebar-item d-flex align-items-center gap-2 px-3 py-2 mb-1 text-decoration-none"
+           [routerLink]="item.route"
+           routerLinkActive="active"
+           [title]="sidebarMini ? item.label : ''">
+          <i class="bi {{ item.icon }} flex-shrink-0" style="min-width:18px;text-align:center"></i>
+          <span class="sidebar-label">{{ item.label }}</span>
+        </a>
+      }
+    </nav>
+
+    <!-- Footer: mini toggle -->
+    <div class="sidebar-footer border-top border-secondary px-2 py-2">
+      <button type="button"
+              class="sidebar-item d-flex align-items-center gap-2 px-3 py-2 mb-1 w-100 border-0 bg-transparent text-start"
+              (click)="toggleMini()"
+              [title]="sidebarMini ? 'Expandir' : 'Colapsar'">
+        <i class="bi flex-shrink-0"
+           style="min-width:18px;text-align:center"
+           [ngClass]="sidebarMini ? 'bi-chevron-double-right' : 'bi-chevron-double-left'"></i>
+        <span class="sidebar-label text-white-50 small">Colapsar</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ── Main area ─────────────────────────────────────────────── -->
+  <div class="admin-main d-flex flex-column flex-grow-1 min-vh-100">
+
+    <!-- Topbar -->
+    <header class="topbar d-flex align-items-center justify-content-between gap-3 px-3 px-md-4 bg-body">
+
+      <div class="d-flex align-items-center gap-3">
+        <button type="button"
+                class="btn btn-link text-body p-0 d-lg-none"
+                (click)="toggleSidebar()" aria-label="Menú">
+          <i class="bi fs-4"
+             [ngClass]="sidebarOpen ? 'bi-x-lg' : 'bi-list'"></i>
+        </button>
+        <span class="fw-semibold text-muted small d-none d-sm-inline">
+          Kosoldar — Certificaciones
+        </span>
+      </div>
+
+      @if (user) {
+        <div class="d-flex align-items-center gap-2">
+
+          <!-- ── Theme toggle ── -->
+          <button type="button"
+                  class="btn-icon"
+                  (click)="theme.toggle()"
+                  [title]="isDark ? 'Modo claro' : 'Modo oscuro'">
+            <i class="bi" [class.bi-sun-fill]="isDark" [class.bi-moon-stars-fill]="!isDark"></i>
+          </button>
+
+          <!-- Logout -->
+          <button type="button" class="btn-icon" (click)="logout()" title="Salir">
+            <i class="bi bi-box-arrow-right"></i>
+          </button>
+
+          <!-- Avatar -->
+          <div class="user-badge" [title]="user.nombre + ' ' + user.apellido">
+            {{ user.nombre[0] }}{{ user.apellido[0] }}
+          </div>
+        </div>
+      }
+    </header>
+
+    <!-- Content -->
+    <main class="p-3 p-md-4 flex-grow-1">
+      <router-outlet />
+    </main>
+
+  </div>
+</div>
+
+<app-toast />

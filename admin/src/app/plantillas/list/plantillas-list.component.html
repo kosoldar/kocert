@@ -1,0 +1,135 @@
+<!-- Header -->
+<div class="d-flex justify-content-between align-items-center mb-4">
+  <h5 class="fw-bold mb-0">Plantillas de certificado</h5>
+  <button class="btn btn-primary btn-sm" (click)="goNew()">
+    <i class="bi bi-plus-lg me-1"></i>Nueva plantilla
+  </button>
+</div>
+
+<!-- Loading -->
+@if (loading) {
+  <div class="text-center py-5 text-muted">
+    <div class="spinner-border spinner-border-sm me-2"></div>Cargando...
+  </div>
+}
+
+<!-- Empty -->
+@if (!loading && layouts.length === 0) {
+  <div class="text-center py-5 text-muted">
+    <i class="bi bi-layout-text-window d-block fs-1 mb-2 opacity-25"></i>
+    <p class="mb-3">No hay plantillas configuradas.</p>
+    <button class="btn btn-primary btn-sm" (click)="goNew()">
+      <i class="bi bi-plus-lg me-1"></i>Crear primera plantilla
+    </button>
+  </div>
+}
+
+<!-- Grid -->
+@if (!loading && layouts.length > 0) {
+  <div class="row g-3">
+    @for (layout of layouts; track layout.id) {
+      <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+        <div class="card h-100 shadow-sm">
+
+          <!-- Thumbnail -->
+          <div class="card-img-top bg-light border-bottom d-flex align-items-center justify-content-center overflow-hidden"
+               style="height:200px;">
+            @if (layout.thumbnail) {
+              <img [src]="layout.thumbnail"
+                   alt="Preview {{ layout.nombre }}"
+                   style="max-width:100%;max-height:100%;object-fit:contain;">
+            } @else {
+              <i class="bi bi-layout-text-window text-muted opacity-25" style="font-size:4rem;"></i>
+            }
+          </div>
+
+          <div class="card-body">
+            <div class="d-flex align-items-start justify-content-between gap-2">
+              <div>
+                <h6 class="mb-1 fw-semibold">{{ layout.nombre }}</h6>
+                @if (layout.descripcion) {
+                  <p class="text-muted small mb-1">{{ layout.descripcion }}</p>
+                }
+              </div>
+              @if (layout.es_default) {
+                <span class="badge bg-success-subtle text-success-emphasis flex-shrink-0">Default</span>
+              }
+            </div>
+
+            <div class="d-flex gap-2 mt-2 flex-wrap">
+              <span class="badge bg-body-secondary text-body-secondary border">
+                <i class="bi bi-file-earmark me-1"></i>{{ layout.orientacion }}
+              </span>
+              <span class="badge bg-body-secondary text-body-secondary border">
+                <i class="bi bi-diagram-3 me-1"></i>{{ normasLabel(layout) }}
+              </span>
+            </div>
+          </div>
+
+          <div class="card-footer bg-transparent border-top-0 pt-0 pb-3 px-3">
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-secondary btn-sm flex-grow-1"
+                      (click)="goEdit(layout)"
+                      title="Editar plantilla">
+                <i class="bi bi-pencil me-1"></i>Editar
+              </button>
+
+              <button class="btn btn-outline-primary btn-sm"
+                      (click)="openPreview(layout)"
+                      [disabled]="previewLoading === layout.id"
+                      title="Vista previa PDF">
+                @if (previewLoading === layout.id) {
+                  <span class="spinner-border spinner-border-sm"></span>
+                } @else {
+                  <i class="bi bi-eye"></i>
+                }
+              </button>
+
+              <button class="btn btn-outline-danger btn-sm"
+                      (click)="confirmDelete(layout)"
+                      title="Eliminar plantilla">
+                <i class="bi bi-trash"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    }
+  </div>
+}
+
+<!-- Delete confirm modal -->
+@if (deleteTarget) {
+  <div class="modal d-block" tabindex="-1" style="background:rgba(0,0,0,.5);">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body text-center py-4">
+          <i class="bi bi-exclamation-triangle text-warning d-block fs-2 mb-2"></i>
+          <p class="mb-0">¿Eliminar plantilla <strong>{{ deleteTarget.nombre }}</strong>?</p>
+        </div>
+        <div class="modal-footer justify-content-center border-0 pt-0">
+          <button class="btn btn-secondary btn-sm" (click)="cancelDelete()">Cancelar</button>
+          <button class="btn btn-danger btn-sm" (click)="doDelete()">Eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+
+<!-- PDF Preview modal -->
+@if (previewPdf) {
+  <div class="modal d-block" tabindex="-1" style="background:rgba(0,0,0,.7);">
+    <div class="modal-dialog modal-xl modal-dialog-centered" style="max-width:900px;">
+      <div class="modal-content" style="height:85vh;">
+        <div class="modal-header py-2">
+          <h6 class="modal-title mb-0">Vista previa</h6>
+          <button type="button" class="btn-close" (click)="closePreview()"></button>
+        </div>
+        <div class="modal-body p-0 flex-grow-1" style="overflow:hidden;">
+          <iframe [src]="previewPdf" style="width:100%;height:100%;border:none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+}

@@ -1,0 +1,102 @@
+<div class="d-flex align-items-center gap-3 mb-4">
+  <button type="button" class="btn-icon" (click)="back()" title="Volver">
+    <i class="bi bi-arrow-left"></i>
+  </button>
+  <h5 class="fw-bold mb-0">{{ isEdit ? 'Editar usuario' : 'Nuevo usuario' }}</h5>
+</div>
+
+@if (loading) {
+  <div class="text-center py-5 text-muted">
+    <div class="spinner-border spinner-border-sm me-2"></div>Cargando...
+  </div>
+}
+
+@if (!loading) {
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-7 col-xl-6">
+      <div class="card">
+        <div class="card-body p-4">
+          <form [formGroup]="form" novalidate autocomplete="off">
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <label class="form-label fw-semibold small">Apellido <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" formControlName="apellido"
+                  [class.is-invalid]="f('apellido').invalid && f('apellido').touched" />
+                <div class="invalid-feedback">Requerido.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-semibold small">Nombre <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" formControlName="nombre"
+                  [class.is-invalid]="f('nombre').invalid && f('nombre').touched" />
+                <div class="invalid-feedback">Requerido.</div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label fw-semibold small">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" formControlName="email"
+                  [class.is-invalid]="f('email').invalid && f('email').touched" />
+                <div class="invalid-feedback">
+                  @if (f('email').errors?.['required']) { Requerido. }
+                  @if (f('email').errors?.['email'])    { Email inválido. }
+                  @if (f('email').errors?.['taken'])    { Email ya registrado. }
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-semibold small">
+                  Contraseña
+                  @if (!isEdit) { <span class="text-danger">*</span> }
+                  @if (isEdit)  { <span class="text-muted">(dejar vacío para no cambiar)</span> }
+                </label>
+                <input type="password" class="form-control" formControlName="password"
+                  autocomplete="new-password"
+                  [class.is-invalid]="f('password').invalid && f('password').touched" />
+                <div class="invalid-feedback">Mínimo 8 caracteres.</div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label fw-semibold small">Rol <span class="text-danger">*</span></label>
+                <select class="form-select" formControlName="rol">
+                  <option value="tecnico">Técnico</option>
+                  <option value="admin">Administrador</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox"
+                    id="chk-activo" formControlName="activo" />
+                  <label class="form-check-label" for="chk-activo">Usuario activo</label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="d-flex justify-content-end gap-2 mt-4 pt-3 border-top">
+              <button type="button" class="btn btn-secondary" (click)="back()">Cancelar</button>
+              <button type="button" class="btn btn-primary fw-semibold"
+                      [disabled]="saving" (click)="openReview()">
+                @if (saving) {
+                  <span class="spinner-border spinner-border-sm me-2"></span>
+                }
+                {{ isEdit ? 'Guardar cambios' : 'Crear usuario' }}
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+}
+
+<app-data-review-modal
+  *ngIf="showReview"
+  [title]="isEdit ? 'Editar usuario' : 'Nuevo usuario'"
+  [fields]="reviewFields"
+  [isEdit]="isEdit"
+  (confirmed)="onConfirmed()"
+  (cancelled)="showReview = false">
+</app-data-review-modal>
